@@ -1,0 +1,29 @@
+.nav-btn{
+    background-color: none !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    font-weight: bold;
+    span{
+        background-color: none !important;
+        color: black !important;
+    }
+    &:hover{
+        //color: blue !important;
+        border-radius: 0;
+        background-color: none;
+        border-bottom: solid $m-primary 2px;
+        font-weight: bold;
+        span{
+            color: $m-primary !important;
+        }
+    }
+}
+.my-active{
+    border-radius: 0 !important;
+    background-color: none;
+    border-bottom: solid $m-primary 2px;
+    font-weight: bold;
+    span{
+        color: $m-primary !important;
+    }
+}

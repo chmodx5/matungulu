@@ -1,0 +1,71 @@
+.m-container{
+     height: 35em;
+     position: relative;
+     width: 100%;
+     .m-left{
+         height: 100%;
+         width: 100%;
+         z-index: 1;
+         position: absolute;
+         top: 0;
+         background-color: rgb(255, 255, 255, 0.8);
+         .hero{
+             height: 100%;
+             position: relative;
+            .m-line{
+                background-color: black;
+                height: 3px;
+                width: 5em;
+            }
+         }
+    }
+    .m-right{
+        height: 100%;
+        margin-top: 0;
+        z-index: 0;
+        width: 100%;
+        float: right;
+        
+    }
+}
+@media (min-width: 540px) {
+    .m-container{
+        .m-left{
+            width: 100%;
+            .hero{
+                width: 100%;
+            }
+         }
+         .m-right{
+             width: 100%;
+         }
+     }
+ }
+ @media (min-width: 800px) {
+    .m-container{
+        .m-left{
+            width: 100%;
+            .hero{
+                width: 65%;
+            }
+         }
+         .m-right{
+             width: 60%;
+         }
+     }
+ }
+  @media (min-width: 1280px) {
+    .m-container{
+        height: 80vh;
+        .m-left{
+            width: 100%;
+            background-color: rgb(255, 255, 255, 0.2);
+            .hero{
+                width: 50%;
+            }
+         }
+         .m-right{
+             width: 50%;
+         }
+     }
+ }
