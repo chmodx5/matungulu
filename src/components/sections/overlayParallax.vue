@@ -9,7 +9,7 @@
       <v-container class=" mx-auto" style="width:100vw">
         <div class=" ">
           <h3 class="text-h3 text-capitalize font-weight-black">
-            Do you need Emergency Medical Care?
+            Emergency Medical Care?
           </h3>
           <p class="text-h6 font-weight-regular">
             You can call us through the Call Centre on 0719073000 / 0732163000 /
