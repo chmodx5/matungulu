@@ -31,9 +31,9 @@
           >
             <v-img :src="require(`@/assets/img/${insurance.img}`)"></v-img>
             <div class="py-1">
-              <small class="px-3 text-capitalize font-weight-bold"
-                >madison insurance</small
-              >
+              <small class="px-3 text-capitalize font-weight-bold">{{
+                insurance.title
+              }}</small>
             </div>
           </v-card>
         </div>

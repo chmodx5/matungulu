@@ -99,7 +99,67 @@ export default {
     insurances: [
       {
         img: "insurance/aar.png",
-        title: "madison insurance",
+        title: "AAR insurance",
+      },
+      {
+        img: "insurance/auditor.png",
+        title: "Office of the auditor general",
+      },
+      {
+        img: "insurance/britam.png",
+        title: "Britam Insurance",
+      },
+      {
+        img: "insurance/cic.png",
+        title: "CIC Insurance",
+      },
+      {
+        img: "insurance/coop.png",
+        title: "Co-operative Bank",
+      },
+      {
+        img: "insurance/ga.png",
+        title: "GA Insurance",
+      },
+      {
+        img: "insurance/heritage.jpg",
+        title: "Heritage Insurance",
+      },
+      {
+        img: "insurance/Jubilee.svg",
+        title: "Jubilee Insurance",
+      },
+      {
+        img: "insurance/kenbright.png",
+        title: "KenBright",
+      },
+      {
+        img: "insurance/kenyanalliance.jpg",
+        title: "kenyan alliance Insurance",
+      },
+      {
+        img: "insurance/laison.png",
+        title: "Liaison Insurance",
+      },
+      {
+        img: "insurance/madison.png",
+        title: "Madison Insurance",
+      },
+      {
+        img: "insurance/nhif.png",
+        title: "NHIF",
+      },
+      {
+        img: "insurance/power.png",
+        title: "Kenya Power",
+      },
+      {
+        img: "insurance/Saham.svg",
+        title: "saham Insurance",
+      },
+      {
+        img: "insurance/sanlam.png",
+        title: "Sanlam Insurance",
       },
     ],
   }),
