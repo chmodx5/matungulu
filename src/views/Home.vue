@@ -98,7 +98,7 @@ export default {
     ],
     insurances: [
       {
-        img: "insurance/aar.png",
+        img: "insurance/aar.jpeg",
         title: "AAR insurance",
       },
       {
