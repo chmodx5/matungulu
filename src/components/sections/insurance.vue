@@ -29,7 +29,7 @@
             height="auto"
             width="150"
           >
-            <v-img :src="insurance.img"></v-img>
+            <v-img :src="require(`@/assets/img/${insurance.img}`)"></v-img>
             <div class="py-1">
               <small class="px-3 text-capitalize font-weight-bold"
                 >madison insurance</small

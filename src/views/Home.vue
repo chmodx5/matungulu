@@ -98,71 +98,7 @@ export default {
     ],
     insurances: [
       {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
-        title: "madison insurance",
-      },
-      {
-        img: "https://source.unsplash.com/nMcqssE0eA0",
+        img: "insurance/aar.png",
         title: "madison insurance",
       },
     ],
