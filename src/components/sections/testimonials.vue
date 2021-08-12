@@ -5,7 +5,7 @@
   >
     <v-row justify="center">
       <v-col cols="12" sm="8" md="4" v-for="k in 3" :key="k" class="">
-        <v-card outlined class="pa-6 py-9">
+        <v-card hover outlined class="pa-6 py-9">
           <p style="font-style:italic !important">
             Dr. Douglas was very helpful and willing to answer all the questions
             and take the time to make suggestions. Thank you for your kindness

@@ -1,7 +1,19 @@
 <template>
   <v-app>
     <nav-bar :nav-links="navLinks"></nav-bar>
-    <v-main v-scroll:#scroll-target="onScroll" id="scroll-target">
+    <v-main>
+      <div v-if="$route.path != '/'">
+        <v-parallax height="300" src="https://source.unsplash.com/j7tWLBlK9mk">
+          <v-overlay light absolute color="secondary" opacity=".5">
+            <v-container style="width:100vw" class="">
+              <h1 class="text-h3 font-weight-black text-capitalize">
+                {{ $route.name }} page
+              </h1>
+              <p class="text-decoration-underline">{{ $route.path }}</p>
+            </v-container>
+          </v-overlay>
+        </v-parallax>
+      </div>
       <router-view />
     </v-main>
     <mod-footer></mod-footer>
