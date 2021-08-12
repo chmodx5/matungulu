@@ -66,10 +66,13 @@
             <v-list>
               <v-list-item
                 to="/services"
-                v-for="(item, index) in 9"
+                v-for="(service, index) in services"
                 :key="index"
+                @click="$vuetify.goTo(`#${service.id}`)"
               >
-                <v-list-item-title>something</v-list-item-title>
+                <v-list-item-title class="text-capitalize">{{
+                  service.title
+                }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
@@ -109,10 +112,46 @@ export default {
   name: "navBar",
   data: () => ({
     drawer: false,
+    services: [
+      {
+        id: "outpatient",
+        title: "outpatient ",
+      },
+      {
+        id: "inpatient",
+        title: "in-patient",
+      },
+      {
+        id: "laboratory",
+        title: "laboratory",
+      },
+      {
+        id: "pharmacy",
+        title: "inhouse pharmacy",
+      },
+      {
+        id: "maternity",
+        title: "maternity",
+      },
+      {
+        id: "optical",
+        title: "optical services",
+      },
+      {
+        id: "physiotherapy",
+        title: "physiotherapy",
+      },
+      {
+        id: "dental",
+        title: "dental services",
+      },
+      {
+        id: "ultrasound",
+        title: "ultrasound",
+      },
+    ],
   }),
-  props: {
-    navLinks: Array,
-  },
+  props: {},
 };
 </script>
 
