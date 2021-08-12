@@ -2,7 +2,21 @@
   <div>
     <hero></hero>
     <services :services="services"></services>
-    <about></about>
+    <about
+      title="Who we are"
+      subtitle="We are geared towards providing better and affordable healthcare service."
+      img="insurance/sindano.jpg"
+      title2="About us"
+      btnlink="/about"
+      btntext="Read more"
+    >
+      <p>
+        We offer round-the-clock inpatient, outpatient, laboratory and maternity
+        services. We are a recognized and highly acclaimed level three medical
+        facility in the region serving the community as well as institutional
+        clients.
+      </p>
+    </about>
     <overlay-parallax></overlay-parallax>
     <insurance :insurances="insurances"></insurance>
 
@@ -25,7 +39,7 @@ export default {
     services: [
       {
         icon: "mdi-hospital-building",
-        title: "outpatient ",
+        title: "outpatient",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
