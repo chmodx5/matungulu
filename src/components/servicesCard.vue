@@ -23,7 +23,7 @@
         <v-btn
           :to="btnlink"
           tile
-          :class="{ primary: hover, secondary: !hover }"
+          :class="{ 'secondary--text': hover, white: hover, secondary: !hover }"
           >{{ btntext }}</v-btn
         >
       </p>

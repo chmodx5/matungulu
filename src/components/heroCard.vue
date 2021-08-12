@@ -21,7 +21,7 @@
         text
         tile
         class="px-0 font-weight-bold"
-        :class="{ primary: hover, 'px-3': hover }"
+        :class="{ white: hover, 'px-3': hover, 'secondary--text': hover }"
         color="white "
         >learn more <v-icon>mdi-arrow-right</v-icon>
       </v-btn>

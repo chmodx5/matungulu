@@ -4,14 +4,14 @@
     subtitle="something that is about us here and slightly waht we do"
   >
     <v-row>
-      <v-col md="6" class="pa-0">
+      <v-col cols="12" sm="6" md="6" class="">
         <v-img
           height="100%"
           :aspect-ratio="16 / 9"
           src="https://source.unsplash.com/SxNgda0cM8E"
         ></v-img>
       </v-col>
-      <v-col md="6" class=" pa-0 px-9">
+      <v-col cols="12" sm="6" md="6" class="">
         <h4 class="text-h5 font-weight-bold text-capitalize ">
           about us
         </h4>
