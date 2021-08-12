@@ -25,15 +25,16 @@
             outlined
             hover
             tile
+            color=""
             class="ma-4 d-flex flex-column justify-space-between flex-grow-1 "
             height="auto"
             width="150"
           >
-            <div class="pt-3">
+            <div class="pt-3 d-flex align-center" style="height:100%">
               <v-img :src="require(`@/assets/img/${insurance.img}`)"></v-img>
             </div>
-            <div class="py-1">
-              <small class="px-3 text-capitalize font-weight-bold">{{
+            <div class="px-3">
+              <small class=" text-capitalize font-weight-bold">{{
                 insurance.title
               }}</small>
             </div>
