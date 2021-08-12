@@ -20,16 +20,18 @@
 
     <v-slide-group class="" :show-arrows="false">
       <v-slide-item v-for="(insurance, n) in insurances" :key="n">
-        <div>
+        <div class="d-flex">
           <v-card
             outlined
-            color="white"
+            hover
             tile
-            class="ma-4"
+            class="ma-4 d-flex flex-column justify-space-between flex-grow-1 "
             height="auto"
             width="150"
           >
-            <v-img :src="require(`@/assets/img/${insurance.img}`)"></v-img>
+            <div class="pt-3">
+              <v-img :src="require(`@/assets/img/${insurance.img}`)"></v-img>
+            </div>
             <div class="py-1">
               <small class="px-3 text-capitalize font-weight-bold">{{
                 insurance.title

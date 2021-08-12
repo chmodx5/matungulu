@@ -1,5 +1,5 @@
 <template>
-  <v-card tile hover height="50" outlined class="pa-0 d-flex">
+  <v-card tile hover height="50" outlined class=" primary pa-0 d-flex">
     <v-img height="100%" :src="require(`@/assets/img/${img}`)" width="auto">
     </v-img>
     <div class="px-3 py-3">
