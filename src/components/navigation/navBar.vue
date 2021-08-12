@@ -44,13 +44,14 @@
             about
           </v-btn>
 
-          <v-menu offset-y>
+          <v-menu offset-y open-on-hover>
             <template v-slot:activator="{ on, attrs }">
               <v-btn
                 class="nav-btn mx-3"
                 text
                 color="secondary"
                 x-large
+                to="/services"
                 :ripple="false"
                 exact-active-class="my-active"
                 v-bind="attrs"
