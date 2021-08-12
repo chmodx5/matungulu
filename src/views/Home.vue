@@ -4,9 +4,7 @@
     <services :services="services"></services>
     <about></about>
     <overlay-parallax></overlay-parallax>
-    <institutes></institutes>
-    <advantages></advantages>
-
+    <insurance :insurances="insurances"></insurance>
     <news-letter></news-letter>
     <testimonials></testimonials>
   </div>
@@ -15,14 +13,11 @@
 <script>
 import hero from "@/components/sections/hero.vue";
 import services from "@/components/sections/services.vue";
-
-import institutes from "@/components/sections/institutes.vue";
-import advantages from "@/components/sections/advantages.vue";
-
 import newsLetter from "@/components/sections/newsLetter.vue";
 import testimonials from "@/components/sections/testimonials.vue";
 import about from "@/components/sections/about.vue";
 import overlayParallax from "@/components/sections/overlayParallax.vue";
+import insurance from "@/components/sections/insurance.vue";
 
 export default {
   name: "Home",
@@ -101,17 +96,84 @@ export default {
         btnlink: "/",
       },
     ],
+    insurances: [
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+      {
+        img: "https://source.unsplash.com/nMcqssE0eA0",
+        title: "madison insurance",
+      },
+    ],
   }),
   components: {
     hero,
     services,
-
-    institutes,
-    advantages,
-
     newsLetter,
     testimonials,
     about,
+    insurance,
     overlayParallax,
   },
 };
