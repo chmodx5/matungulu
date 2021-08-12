@@ -26,13 +26,62 @@
             text
             color="secondary"
             x-large
-            v-for="link in navLinks"
-            :to="link.link"
-            :key="link.id"
+            to="/"
             :ripple="false"
             exact-active-class="my-active"
           >
-            {{ link.name }}
+            home
+          </v-btn>
+          <v-btn
+            class="nav-btn mx-3"
+            text
+            color="secondary"
+            x-large
+            to="/about"
+            :ripple="false"
+            exact-active-class="my-active"
+          >
+            about
+          </v-btn>
+
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                class="nav-btn mx-3"
+                text
+                color="secondary"
+                x-large
+                :ripple="false"
+                exact-active-class="my-active"
+                v-bind="attrs"
+                v-on="on"
+              >
+                services
+                <v-icon>
+                  mdi-arrow-down
+                </v-icon>
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+                to="/services"
+                v-for="(item, index) in 9"
+                :key="index"
+              >
+                <v-list-item-title>something</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+          <v-btn
+            class="nav-btn mx-3"
+            text
+            color="secondary"
+            x-large
+            to="/contacts"
+            :ripple="false"
+            exact-active-class="my-active"
+          >
+            contact
           </v-btn>
           <v-btn color="secondary" class="ml-3" tile>book appointment</v-btn>
         </div>

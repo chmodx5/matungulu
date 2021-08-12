@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <nav-bar :nav-links="navLinks"></nav-bar>
+    <nav-bar></nav-bar>
     <v-main>
       <div v-if="$route.path != '/'">
         <v-parallax height="300" src="https://source.unsplash.com/j7tWLBlK9mk">
@@ -31,24 +31,6 @@ export default {
     modFooter,
   },
   data: () => ({
-    navLinks: [
-      {
-        name: "home",
-        link: "/",
-      },
-      {
-        name: "about",
-        link: "/About",
-      },
-      {
-        name: "services",
-        link: "/Services",
-      },
-      {
-        name: "contact",
-        link: "/Contacts",
-      },
-    ],
     offsetTop: 0,
   }),
   methods: {
