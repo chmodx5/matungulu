@@ -5,7 +5,7 @@
     <about></about>
     <overlay-parallax></overlay-parallax>
     <insurance :insurances="insurances"></insurance>
-    <news-letter></news-letter>
+
     <testimonials></testimonials>
   </div>
 </template>
@@ -13,7 +13,7 @@
 <script>
 import hero from "@/components/sections/hero.vue";
 import services from "@/components/sections/services.vue";
-import newsLetter from "@/components/sections/newsLetter.vue";
+
 import testimonials from "@/components/sections/testimonials.vue";
 import about from "@/components/sections/about.vue";
 import overlayParallax from "@/components/sections/overlayParallax.vue";
@@ -106,7 +106,7 @@ export default {
   components: {
     hero,
     services,
-    newsLetter,
+
     testimonials,
     about,
     insurance,
