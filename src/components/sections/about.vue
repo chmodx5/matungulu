@@ -14,49 +14,56 @@
         </h4>
         <slot />
         <p>
-          <v-btn :to="btnlink" tile color="secondary" large
+          <v-btn v-if="btntext" :to="btnlink" tile color="secondary" large
             >{{ btntext }}
           </v-btn>
         </p>
-        <!-- <div class="d-flex justify-space-between">
-          <div>
-            <v-list dense>
-              <v-list-item-group>
-                <v-list-item v-for="(item, i) in 3" :key="i">
-                  <v-list-item-icon>
-                    <v-icon>mdi-home</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-title>some desc</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </div>
-          <div>
-            <v-list dense>
-              <v-list-item-group color="primary">
-                <v-list-item v-for="(item, i) in 3" :key="i">
-                  <v-list-item-icon>
-                    <v-icon>mdi-home</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-title>some desc</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </div>
-        </div> -->
+      </v-col>
+    </v-row>
+
+    <!-- section containing the mission statements -->
+    <v-row>
+      <v-col>
+        <mission-card icon="mdi-table-eye" title="our vision">
+          <p>
+            Matungulu Medical Health and Wellness Centre is committed to
+            excellence through service. We exist to promote, preserve and
+            restore the health of our community.
+          </p>
+        </mission-card>
+      </v-col>
+      <v-col>
+        <mission-card icon="mdi-walk" title="our mission">
+          <p>
+            Our Mission is to passionately pursue the health and well-being of
+            our patients, employees and the community through our culture of
+            exceptional service and commitment to quality health care provision.
+          </p>
+        </mission-card>
+      </v-col>
+      <v-col>
+        <mission-card
+          icon="mdi-target"
+          title="core value"
+          class="text-capitalize"
+        >
+          <p>
+            - service excellence
+          </p>
+          <p>- compassion</p>
+          <p>- teamwork</p>
+        </mission-card>
       </v-col>
     </v-row>
   </default-section>
 </template>
 <script>
 import defaultSection from "@/components/layouts/defaultSection.vue";
+import missionCard from "@/components/missionCard.vue";
 export default {
   components: {
     defaultSection,
+    missionCard,
   },
   props: {
     title: String,
