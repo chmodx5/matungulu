@@ -2,7 +2,7 @@
   <about
     title="Healthcare That Cares"
     subtitle="We are geared towards providing better and affordable healthcare service."
-    img="insurance/doctor.jpg"
+    img="hero/doctor.jpg"
     title2="About us"
   >
     <p>

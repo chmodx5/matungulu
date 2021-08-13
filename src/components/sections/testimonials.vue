@@ -37,6 +37,20 @@ export default {
         name: "Margaret",
         title: "patient",
       },
+      {
+        testimonial:
+          "Their pure concern for my health has kept me going back for their treatment and advice each time I have needed it. No time have I walked in to their front door and not met a smile from their staff, that is reassuring even when you are not feeling well.",
+        img: "hero/test1.jpeg",
+        name: "Linda",
+        title: "patient",
+      },
+      {
+        testimonial:
+          "My husband and I, and now our newborn daughter, have been going to Matungulu Medical for treatment of all our health issues for almost five years now, we haven't had any isues nor any reasons to change them as our medical practitioners.",
+        img: "hero/test3.jpeg",
+        name: "Mrs.Musyoka",
+        title: "patient",
+      },
     ],
   }),
   components: {
