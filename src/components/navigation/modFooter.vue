@@ -8,12 +8,12 @@
           </m-heading>
           <br />
           <p>
-            We offer round-the-clock inpatient, outpatient, laboratory and
-            maternity services. We are a recognized and highly acclaimed level
-            three medical facility in the region serving the community as well
-            as institutional clients
-          </p>
-        </v-col>
+            Matungulu Medical Health and Wellness Centre is an NHIF accredited
+            17-bed private medical facility situated in the heart of Tala
+            Market, well placed to serve both Kangundo and Matungulu Districts
+          </p></v-col
+        >
+
         <v-col cols="12" sm="6" md="4">
           <m-heading medium>
             quick links
@@ -42,31 +42,28 @@
             tala market, matungulu district, machakos county
           </p>
           <p>
-            1-800-1324-765, 1-800-7653-098
+            0700 631 291 / 0738 669 259
           </p>
           <p>
-            info@demolink.org
+            info@matungulumedical.co.ke / complaints@matungulumedical.co.ke
           </p>
         </v-col>
       </v-row>
       <v-row justify="center" no-gutters>
         <v-col class=" py-4 text-center white--text" cols="12">
           {{ new Date().getFullYear() }}
+          <p>
+            ChMod Websites Kenya
+          </p>
           <div class="d-flex justify-center">
             <router-link to="/" style="text-decoration: none;">
               <v-sheet
-                height="50"
-                width="150"
+                height="60"
+                width="60"
                 class="d-flex align-center justify-center mt-3"
-                shaped
-                color="grey darken-4"
                 elevation="3"
-                outlined
               >
-                <m-heading large>
-                  <span class="teal--text">Ch</span><span>Mod</span
-                  ><span class="teal--text">.</span>
-                </m-heading>
+                <v-img src="@/assets/chmod.png" height="60" width="60"> </v-img>
               </v-sheet>
             </router-link>
           </div>
