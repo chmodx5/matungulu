@@ -98,13 +98,23 @@
       </v-container>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" width="300" app clipped temporary>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum
-        earum. Provident perspiciatis impedit voluptatum doloremque. Temporibus
-        eum cumque perferendis repudiandae, architecto quae assumenda dolores
-        laboriosam, error minima expedita hic.
-      </p>
+    <v-navigation-drawer v-model="drawer" temporary width="300" app clipped>
+      <div class="pa-3">
+        <h3 class="text-capitalize">matungulu medical and wellness center</h3>
+      </div>
+      <v-list flat>
+        <v-list-item-group color="primary">
+          <v-list-item
+            v-for="route in $router.options.routes"
+            :key="route.path"
+            :to="route.path"
+          >
+            <v-list-item-content>
+              <v-list-item-title>{{ route.name }} </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
     </v-navigation-drawer>
   </div>
 </template>
