@@ -73,7 +73,7 @@
                 hint="select time"
                 :items="time"
                 item-text="time"
-                label="Service"
+                label="Time"
                 persistent-hint
                 return-object
                 single-line
@@ -153,7 +153,7 @@ export default {
       {
         id: "outpatient",
         icon: "mdi-hospital-building",
-        title: "outpatient",
+        title: "Outpatient",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -162,7 +162,7 @@ export default {
       {
         id: "inpatient",
         icon: "mdi-bed-outline",
-        title: "in-patient",
+        title: "In-patient",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -171,7 +171,7 @@ export default {
       {
         id: "laboratory",
         icon: "mdi-microscope",
-        title: "laboratory",
+        title: "Laboratory",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -180,7 +180,7 @@ export default {
       {
         id: "pharmacy",
         icon: "mdi-pill",
-        title: "inhouse pharmacy",
+        title: "In-house pharmacy",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -189,7 +189,7 @@ export default {
       {
         id: "maternity",
         icon: "mdi-mother-nurse",
-        title: "meternaty",
+        title: "Maternity",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -198,7 +198,7 @@ export default {
       {
         id: "optical",
         icon: "mdi-glasses",
-        title: "optical services",
+        title: "Optical services",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -207,7 +207,7 @@ export default {
       {
         id: "physiotherapy",
         icon: "mdi-human-wheelchair",
-        title: "physiotherapy",
+        title: "Physiotherapy",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -216,7 +216,7 @@ export default {
       {
         id: "dental",
         icon: "mdi-tooth-outline",
-        title: "dental services",
+        title: "Dental services",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -225,14 +225,23 @@ export default {
       {
         id: "ultrasound",
         icon: "mdi-face-recognition",
-        title: "ultrasound",
+        title: "Ultrasound",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
         btnlink: "/services",
       },
     ],
-    time: ["7 - 8am", "8-9am", "9-10am"],
+    time: [
+      "8 - 9am",
+      "9 - 10am",
+      "10 - 11am",
+      "11-12pm",
+      "12 - 1pm",
+      "1 - 2pm",
+      "2 - 3pm",
+      "3 - 4pm",
+    ],
     items: [
       { service: "Florida" },
       { state: "Georgia", abbr: "GA" },
