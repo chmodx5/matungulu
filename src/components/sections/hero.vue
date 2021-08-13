@@ -91,21 +91,61 @@
       <v-card flat tile color="transparent" class="mt-n16 mx-auto ">
         <v-row class="d-flex">
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card title="opening hours" btntext="click me" btnlink="/">
+            <hero-card title="Opening Hours">
               <!-- hero content here -->
+              <div class="d-flex justify-space-between">
+                <p mb-3>
+                  Monday - Saturday
+                </p>
+                <p>
+                  Open
+                </p>
+              </div>
+              <div class="d-flex justify-space-between">
+                <p>
+                  Sundays
+                </p>
+                <p>
+                  Open
+                </p>
+              </div>
+              <div class="d-flex justify-space-between">
+                <p>
+                  Public Holidays
+                </p>
+                <p>
+                  Open
+                </p>
+              </div>
+            </hero-card>
+          </v-col>
+          <v-col md="4" class="flex-grow-1 d-flex">
+            <hero-card
+              title="Specialist Services"
+              btntext="click me"
+              btnlink="/"
+            >
+              <!-- hero content here -->
+              <p text-h4 mb-3>
+                Optical, Dental and Physiotherapy Services.
+              </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                animi eveniet, exercitationem vel at debitis!
+                Available on Appointment on Tuesdays and Fridays.
               </p>
             </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card title="opening hours" btntext="click me" btnlink="/">
-              <!-- hero content here -->
-            </hero-card>
-          </v-col>
-          <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card title="opening hours" btntext="click me" btnlink="/">
+            <hero-card
+              title="Emergency Cases"
+              btntext="click me"
+              btnlink="/contacts"
+            >
+              <p mb-3>
+                Call us at 0700 631 291
+              </p>
+              <p>
+                Or our office at 0738 669 259
+              </p>
             </hero-card>
             <!-- hero content here -->
           </v-col>
@@ -127,9 +167,22 @@ export default {
   data: () => ({
     heroslides: [
       {
-        title: "some title",
-        subtitle: "sdjhj sda sduhaf afudshaufasd usdfa",
-        img: "",
+        title: "Passion for Caring",
+        subtitle:
+          "We aim to make your life better, letting you and your family live the life you want",
+        img: "hero/carousel1.jpeg",
+      },
+      {
+        title: "COVID-19 is real!",
+        subtitle:
+          "Remember to always wear a mask, sanitize or wash your hands with soap regularly and keep social distance.",
+        img: "hero/corona1.jpeg",
+      },
+      {
+        title: "COVID-19 is real!",
+        subtitle:
+          "Remember to always wear a mask, sanitize or wash your hands with soap regularly and keep social distance.",
+        img: "hero/corona1.jpeg",
       },
     ],
   }),

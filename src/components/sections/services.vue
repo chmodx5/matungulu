@@ -1,7 +1,7 @@
 <template>
   <default-section
-    title="what makes us different"
-    subtitle="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia a, eveniet totam praesentium molestiae rerum?"
+    title="Care you can believe in"
+    subtitle="These are the services we offer for bettering the human condition, one patient at a time."
   >
     <v-row>
       <v-col cols="6" sm="6" md="3" v-for="(service, i) in services" :key="i">

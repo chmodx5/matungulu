@@ -1,7 +1,7 @@
 <template>
   <default-section
-    title="insurance"
-    subtitle="we provide a very wide range of insurance coverage"
+    title="Insurance cards accepted"
+    subtitle="We provide a wide range of insurance coverage."
     class=""
   >
     <!-- <v-row>

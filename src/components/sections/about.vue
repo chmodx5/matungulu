@@ -4,7 +4,7 @@
       <v-col cols="12" sm="6" md="6" class="">
         <v-img
           height="100%"
-          :aspect-ratio="16 / 16"
+          :aspect-ratio="16 / 9"
           :src="require(`@/assets/img/${img}`)"
         ></v-img>
       </v-col>

@@ -5,10 +5,11 @@
         {{ title }}
       </h3>
 
-      <div class=" mt-3 d-flex justify-space-between">
+      <div class=" mt-3">
         <slot />
       </div>
       <v-btn
+        v-if="btntext"
         text
         tile
         :to="btnlink"

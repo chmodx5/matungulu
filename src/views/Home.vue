@@ -3,8 +3,8 @@
     <hero></hero>
     <services :services="services"></services>
     <about
-      title="Who we are"
-      subtitle="We are geared towards providing better and affordable healthcare service."
+      title="Who are we?"
+      subtitle="We are a highly acclaimed level 3 medical facility geared towards providing better, personalized and affordable healthcare services."
       img="insurance/sindano.jpg"
       title2="About us"
       btnlink="/about"
