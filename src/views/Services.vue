@@ -23,16 +23,16 @@ export default {
     services: [
       {
         id: "outpatient",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/carousel1.jpeg",
         left: false,
         icon: "mdi-hospital-building",
-        title: "outpatient ",
+        title: "outpatient",
         desc:
           "How good it is to have a clinic where you can walk in during an emergency and be able to access professional medical care on an urgent basis. You don’t have to worry about long waits and you can wizard the clinic into the clinic any time of day and week.",
       },
       {
         id: "inpatient",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/inpatient.jpeg",
         left: true,
         icon: "mdi-bed-outline",
         title: "in-patient",
@@ -41,66 +41,66 @@ export default {
       },
       {
         id: "laboratory",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/lab.jpeg",
         left: false,
         icon: "mdi-microscope",
         title: "laboratory",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "Our laboratory is well equipped and our lab technicians well qualified to perform laboratory procedures and give you reliable results.",
       },
       {
         id: "pharmacy",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/pharmacy.jpg",
         left: true,
         icon: "mdi-pill",
         title: "inhouse pharmacy",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "Our pharmacy is well stocked to provide a wide selection of medications for any ailment you might have.",
       },
       {
         id: "maternity",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/maternity.jpeg",
         left: false,
         icon: "mdi-mother-nurse",
         title: "maternity",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "We provide pre- and post-natal care for you and your baby. Weprovide baby care including immunization and vaccination for you and your whole family.",
       },
       {
         id: "optical",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/vision.jpg",
         left: true,
         icon: "mdi-glasses",
         title: "optical services",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "Our optical team is on site every Tuesday and Friday, and only an appointment away.",
       },
       {
         id: "physiotherapy",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/physio.jpg",
         left: false,
         icon: "mdi-human-wheelchair",
         title: "physiotherapy",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "In your journeys, you might get many injuries that cannot be avoided. It is best to find a clinic that can service your injuries at the time you need it most. We can even offer a comprehensive treatment that combines exercise and rehabilitation therapy so that your injuries can he properly.",
       },
       {
         id: "dental",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/dental1.jpeg",
         left: true,
         icon: "mdi-tooth-outline",
         title: "dental services",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "Our dental team is on site every Tuesday and Friday, and only an appointment away",
       },
       {
         id: "ultrasound",
-        img: "https://source.unsplash.com/j7tWLBlK9mk",
+        img: "hero/ultrasound.jpeg",
         left: false,
         icon: "mdi-face-recognition",
         title: "ultrasound",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "Our ultrasound imaging will enable you see the progress of your unborn child, memories that will forever remain unforgetable.",
       },
     ],
   }),

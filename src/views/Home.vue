@@ -40,7 +40,7 @@ export default {
       {
         id: "outpatient",
         icon: "mdi-hospital-building",
-        title: "outpatient",
+        title: "out-patient",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -67,7 +67,7 @@ export default {
       {
         id: "pharmacy",
         icon: "mdi-pill",
-        title: "inhouse pharmacy",
+        title: "in-house pharmacy",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
@@ -76,7 +76,7 @@ export default {
       {
         id: "maternity",
         icon: "mdi-mother-nurse",
-        title: "meternaty",
+        title: "maternity",
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
