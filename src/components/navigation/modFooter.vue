@@ -1,6 +1,6 @@
 <template>
-  <v-footer color="secondary lighten-1" padless dark class="pt-16">
-    <v-container>
+  <v-footer color="secondary lighten-1" padless dark class="pt-16 flex-column">
+    <v-container class="pa-0">
       <v-row class="">
         <v-col cols="12" sm="6" md="4">
           <m-heading medium>
@@ -49,28 +49,34 @@
           </p>
         </v-col>
       </v-row>
-      <v-row justify="center" no-gutters>
-        <v-col class=" py-4 text-center white--text" cols="12">
-          {{ new Date().getFullYear() }}
-          <p>
-            ChMod Websites Kenya
-          </p>
-          <div class="d-flex justify-center">
-            <router-link to="/" style="text-decoration: none;">
-              <v-sheet
-                height="60"
-                width="60"
-                class="d-flex align-center justify-center mt-3"
-                elevation="3"
-              >
-                <v-img src="@/assets/chmod.png" height="60" width="60"> </v-img>
-              </v-sheet>
-            </router-link>
-          </div>
-          <span class="teal lighten-3"> </span>
-        </v-col>
-      </v-row>
     </v-container>
+    <v-row style="width:100%" justify="center" class="secondary" no-gutters>
+      <v-col class=" py-4 text-center white--text" cols="12">
+        <div class="d-flex justify-center">
+          <router-link to="/" style="text-decoration: none;">
+            <v-sheet color="transparent" width="auto" class=" mt-3">
+              <v-img
+                class="mx-auto"
+                src="@/assets/chmod.png"
+                height="20"
+                width="20"
+              >
+              </v-img>
+              <div>
+                <p class="ma-0">
+                  ChMod Websites Kenya
+                </p>
+                <small>
+                  <v-icon small>mdi-copyright</v-icon>
+                  {{ new Date().getFullYear() }}
+                </small>
+              </div>
+            </v-sheet>
+          </router-link>
+        </div>
+        <span class="teal lighten-3"> </span>
+      </v-col>
+    </v-row>
   </v-footer>
 </template>
 

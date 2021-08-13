@@ -2,9 +2,8 @@
   <v-parallax light height="400" src="https://source.unsplash.com/XZF2VZN98wY">
     <v-overlay
       absolute
-      color="white"
-      opacity="0.4"
-      class="d-flex justify-center black--text"
+      color="secondary"
+      class="d-flex justify-center white--text"
     >
       <v-container class=" mx-auto" style="width:100vw">
         <div class=" ">
