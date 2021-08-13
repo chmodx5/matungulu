@@ -14,7 +14,11 @@
             You can call us through the Call Centre on 0719073000 / 0732163000 /
             020 6303000 or Our Accidents and Emergency Department on 0719073051
           </p>
-          <p><v-btn tile color="secondary" large>click me</v-btn></p>
+          <p>
+            <v-btn to="/contacts" tile color="secondary" large
+              >contact us</v-btn
+            >
+          </p>
         </div>
       </v-container>
     </v-overlay>

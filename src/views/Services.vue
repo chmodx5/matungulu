@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <default-section
+    subtitle="we provide a wide range of services"
+    title="services"
+  >
     <service-section
       v-for="(service, i) in services"
       :key="i"
@@ -13,11 +16,12 @@
         {{ service.desc }}
       </p>
     </service-section>
-  </div>
+  </default-section>
 </template>
 
 <script>
 import serviceSection from "@/components/sections/serviceSection.vue";
+import DefaultSection from "../components/layouts/defaultSection.vue";
 export default {
   data: () => ({
     services: [
@@ -106,6 +110,7 @@ export default {
   }),
   components: {
     serviceSection,
+    DefaultSection,
   },
 };
 </script>

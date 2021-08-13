@@ -15,7 +15,9 @@
           {{ icon }}
         </v-icon>
       </div>
-      <h4 class="text-h5 font-weight-bold text-capitalize">{{ title }}</h4>
+      <h4 class="text-h6 text-sm-h5 font-weight-bold text-capitalize">
+        {{ title }}
+      </h4>
       <p>
         {{ desc }}
       </p>

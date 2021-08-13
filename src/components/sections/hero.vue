@@ -52,7 +52,7 @@
     <v-container>
       <v-card flat tile color="transparent" class="mt-n16 mx-auto ">
         <v-row class="d-flex">
-          <v-col md="4" class="flex-grow-1 d-flex">
+          <v-col cols="12" md="4" class="flex-grow-1 d-flex">
             <hero-card title="Opening Hours">
               <!-- hero content here -->
               <div class="d-flex justify-space-between">
@@ -81,7 +81,7 @@
               </div>
             </hero-card>
           </v-col>
-          <v-col md="4" class="flex-grow-1 d-flex">
+          <v-col cols="12" md="4" class="flex-grow-1 d-flex">
             <hero-card
               title="Specialist Services"
               btntext="click me"
@@ -96,7 +96,7 @@
               </p>
             </hero-card>
           </v-col>
-          <v-col md="4" class="flex-grow-1 d-flex">
+          <v-col cols="12" md="4" class="flex-grow-1 d-flex">
             <hero-card
               title="Emergency Cases"
               btntext="click me"
