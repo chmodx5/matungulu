@@ -44,7 +44,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "inpatient",
@@ -53,7 +53,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "laboratory",
@@ -62,7 +62,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "pharmacy",
@@ -71,7 +71,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "maternity",
@@ -80,7 +80,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "optical",
@@ -89,7 +89,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "physiotherapy",
@@ -98,7 +98,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "dental",
@@ -107,7 +107,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
       {
         id: "ultrasound",
@@ -116,7 +116,7 @@ export default {
         desc:
           "this is just some random desc purely because i im not creative enough to write something meaningful",
         btntext: "more",
-        btnlink: "/",
+        btnlink: "/services",
       },
     ],
     insurances: [

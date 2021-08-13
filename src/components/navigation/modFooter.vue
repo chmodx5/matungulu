@@ -8,9 +8,10 @@
           </m-heading>
           <br />
           <p>
-            Healthia City Clinic is the leading healthcare provider in the
-            region that also stands committed to providing for the ever-growing
-            and diverse healthcare needs of the individuals in our community.
+            We offer round-the-clock inpatient, outpatient, laboratory and
+            maternity services. We are a recognized and highly acclaimed level
+            three medical facility in the region serving the community as well
+            as institutional clients
           </p>
         </v-col>
         <v-col cols="12" sm="6" md="4">
@@ -20,14 +21,15 @@
           <br />
           <div class="">
             <v-btn
-              v-for="link in links"
-              :key="link"
+              v-for="route in $router.options.routes"
+              :key="route.path"
+              :to="route.path"
               color="white"
               text
               small
               class="my-0"
             >
-              {{ link }}
+              {{ route.name }}
             </v-btn>
           </div>
         </v-col>
@@ -36,8 +38,8 @@
             contact information
           </m-heading>
           <br />
-          <p>
-            2130 Fulton Street San Diego, CA 94117-1080 USA
+          <p class="text-capitalize">
+            tala market, matungulu district, machakos county
           </p>
           <p>
             1-800-1324-765, 1-800-7653-098
@@ -84,7 +86,18 @@ export default {
     mHeading,
   },
   data: () => ({
-    links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
+    links: [
+      {
+        title: "home",
+        link: "/",
+      },
+      "Home",
+      "About Us",
+      "Team",
+      "Services",
+      "Blog",
+      "Contact Us",
+    ],
   }),
 };
 </script>
