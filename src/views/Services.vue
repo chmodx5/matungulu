@@ -28,7 +28,7 @@ export default {
         icon: "mdi-hospital-building",
         title: "outpatient ",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "How good it is to have a clinic where you can walk in during an emergency and be able to access professional medical care on an urgent basis. You don’t have to worry about long waits and you can wizard the clinic into the clinic any time of day and week.",
       },
       {
         id: "inpatient",
@@ -37,7 +37,7 @@ export default {
         icon: "mdi-bed-outline",
         title: "in-patient",
         desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
+          "It is always best to have a good doctor that will take care of you and your whole family. Our team of qualified doctors can ensure prevention, coordination of care, management of disease, precaution, and solution of your disease.",
       },
       {
         id: "laboratory",

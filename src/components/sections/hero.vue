@@ -60,14 +60,11 @@
               <v-row style="">
                 <v-col md="8">
                   <h1 class="text-h2 font-weight-black">
-                    Lorem ipsum sit amet
+                    We do extraordinary care
                   </h1>
                   <br />
                   <h6 class="text-h6">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Dicta aliquam in id assumenda veritatis eius quos delectus
-                    amet vitae ratione eos vel eveniet commodi magni ipsum quae,
-                    a vero eaque?
+                    Excellent health care... Close to home.
                   </h6>
 
                   <br />
