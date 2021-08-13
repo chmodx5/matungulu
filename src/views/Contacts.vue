@@ -2,25 +2,44 @@
   <default-section>
     <v-row>
       <v-col md="6">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit
-          accusantium tempora, non, qui libero veritatis hic asperiores eaque
-          quae sunt neque quos quaerat nulla velit dolore officiis enim ad?
+        <h3 class="text-capitalize font-weight-bold text-h4">opening hours</h3>
+        <br />
+        <div class="text-capitalize">
+          <p>monday - saturday : open</p>
+          <p>sunday : open</p>
+          <p>public holidays : open</p>
+        </div>
+        <p class="font-weight-bold">
+          We are open 24 hours daily
         </p>
       </v-col>
       <v-col md="6">
         <v-row>
           <v-col cols="4" class="d-flex" sm="6">
             <contact-card icon="mdi-map-marker-outline" title="location">
-              <p class="text-caption">somthing again</p>
+              <p class="text-caption">
+                Tala Market, Matungulu District, Machakos County
+              </p>
             </contact-card>
           </v-col>
           <v-col cols="4" class="d-flex" sm="6">
             <contact-card icon="mdi-phone-outline" title="phone numbers">
+              <p class="text-caption mb-0">
+                0700 631 291
+              </p>
+              <p class="text-caption">
+                0738 669 259
+              </p>
             </contact-card>
           </v-col>
           <v-col cols="4" class="d-flex" sm="6">
             <contact-card icon="mdi-email-outline" title="email">
+              <p class="text-caption mb-0">
+                info@matungulumedical.co.ke
+              </p>
+              <p class="text-caption">
+                complaints@matungulumedical.co.ke
+              </p>
             </contact-card>
           </v-col>
           <v-col cols="4" class="d-flex" sm="6">
@@ -35,6 +54,8 @@
                     :class="{ 'secondary--text': hover, white: hover }"
                     icon
                     tile
+                    color="secondary"
+                    outlined
                     href=""
                     ><v-icon>mdi-facebook</v-icon></v-btn
                   >
@@ -44,6 +65,8 @@
                     :class="{ 'secondary--text': hover, white: hover }"
                     icon
                     tile
+                    outlined
+                    color="secondary"
                     href=""
                     ><v-icon>mdi-instagram</v-icon></v-btn
                   >
@@ -52,6 +75,8 @@
                     :class="{ 'secondary--text': hover, white: hover }"
                     icon
                     tile
+                    outlined
+                    color="secondary"
                     href=""
                     ><v-icon>mdi-twitter</v-icon></v-btn
                   >
@@ -60,6 +85,8 @@
                     :class="{ 'secondary--text': hover, white: hover }"
                     icon
                     tile
+                    outlined
+                    color="secondary"
                     href=""
                     ><v-icon>mdi-linkedin</v-icon></v-btn
                   >

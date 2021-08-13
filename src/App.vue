@@ -9,7 +9,6 @@
               <h1 class="text-h3 font-weight-black text-capitalize">
                 {{ $route.name }} page
               </h1>
-              <p class="text-decoration-underline">{{ $route.path }}</p>
             </v-container>
           </v-overlay>
         </v-parallax>
