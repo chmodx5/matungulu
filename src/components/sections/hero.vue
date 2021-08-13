@@ -50,6 +50,7 @@
         delimiter-icon="mdi-minus"
         height="100%"
       >
+        <!-- slider -->
         <v-carousel-item v-for="(heroslide, k) in heroslides" :key="k">
           <v-img :src="heroslide.img" height="100%" class="d-flex align-center">
             <v-container>
@@ -86,13 +87,19 @@
       <v-card flat tile color="transparent" class="mt-n16 mx-auto ">
         <v-row class="d-flex">
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+              <!-- hero content here -->
+            </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+              <!-- hero content here -->
+            </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+            </hero-card>
+            <!-- hero content here -->
           </v-col>
         </v-row>
       </v-card>
@@ -109,10 +116,14 @@ export default {
     mHeading,
     heroCard,
   },
-  data: () => ({}),
-  props: {
-    heroslides: Array,
-  },
+  data: () => ({
+    heroslides: [
+      {
+        title: "some title",
+        subtitle: "sdjhj sda sduhaf afudshaufasd usdfa",
+      },
+    ],
+  }),
 };
 </script>
 
