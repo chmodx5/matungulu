@@ -38,6 +38,7 @@ export default {
   data: () => ({
     services: [
       {
+        id: "outpatient",
         icon: "mdi-hospital-building",
         title: "outpatient",
         desc:
@@ -46,6 +47,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "inpatient",
         icon: "mdi-bed-outline",
         title: "in-patient",
         desc:
@@ -54,6 +56,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "laboratory",
         icon: "mdi-microscope",
         title: "laboratory",
         desc:
@@ -62,6 +65,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "pharmacy",
         icon: "mdi-pill",
         title: "inhouse pharmacy",
         desc:
@@ -70,6 +74,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "maternity",
         icon: "mdi-mother-nurse",
         title: "meternaty",
         desc:
@@ -78,6 +83,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "optical",
         icon: "mdi-glasses",
         title: "optical services",
         desc:
@@ -86,6 +92,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "physiotherapy",
         icon: "mdi-human-wheelchair",
         title: "physiotherapy",
         desc:
@@ -94,6 +101,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "dental",
         icon: "mdi-tooth-outline",
         title: "dental services",
         desc:
@@ -102,6 +110,7 @@ export default {
         btnlink: "/",
       },
       {
+        id: "ultrasound",
         icon: "mdi-face-recognition",
         title: "ultrasound",
         desc:
