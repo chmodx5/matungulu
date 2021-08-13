@@ -15,14 +15,14 @@
       </v-col>
       <v-col md="6">
         <v-row>
-          <v-col cols="4" class="d-flex" sm="6">
+          <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-map-marker-outline" title="location">
               <p class="text-caption">
                 Tala Market, Matungulu District, Machakos County
               </p>
             </contact-card>
           </v-col>
-          <v-col cols="4" class="d-flex" sm="6">
+          <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-phone-outline" title="phone numbers">
               <p class="text-caption mb-0">
                 0700 631 291
@@ -32,7 +32,7 @@
               </p>
             </contact-card>
           </v-col>
-          <v-col cols="4" class="d-flex" sm="6">
+          <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-email-outline" title="email">
               <p class="text-caption mb-0">
                 info@matungulumedical.co.ke
@@ -42,7 +42,7 @@
               </p>
             </contact-card>
           </v-col>
-          <v-col cols="4" class="d-flex" sm="6">
+          <v-col cols="12" sm="6" md="" class="d-flex">
             <v-hover v-slot="{ hover }">
               <contact-card
                 icon="mdi-account-group-outline"
