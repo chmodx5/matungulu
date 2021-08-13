@@ -52,7 +52,11 @@
       >
         <!-- slider -->
         <v-carousel-item v-for="(heroslide, k) in heroslides" :key="k">
-          <v-img :src="heroslide.img" height="100%" class="d-flex align-center">
+          <v-img
+            :src="require(`@/assets/img/${heroslide.img}`)"
+            height="100%"
+            class="d-flex align-center"
+          >
             <v-container>
               <v-row style="">
                 <v-col md="8">
@@ -125,6 +129,7 @@ export default {
       {
         title: "some title",
         subtitle: "sdjhj sda sduhaf afudshaufasd usdfa",
+        img: "",
       },
     ],
   }),
