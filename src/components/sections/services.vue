@@ -6,6 +6,7 @@
     <v-row>
       <v-col cols="6" sm="6" md="3" v-for="(service, i) in services" :key="i">
         <services-card
+          :id="service.id"
           :icon="service.icon"
           :title="service.title"
           :btntext="service.btntext"
