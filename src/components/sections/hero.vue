@@ -50,28 +50,30 @@
         delimiter-icon="mdi-minus"
         height="100%"
       >
-        <v-carousel-item v-for="(i, k) in 3" :key="k">
-          <v-img
-            src="https://source.unsplash.com/m3Oe8vSE88Y"
-            height="100%"
-            class="d-flex align-center"
-          >
+        <!-- slider -->
+        <v-carousel-item v-for="(heroslide, k) in heroslides" :key="k">
+          <v-img :src="heroslide.img" height="100%" class="d-flex align-center">
             <v-container>
               <v-row style="">
                 <v-col md="8">
                   <h1 class="text-h2 font-weight-black">
-                    We do extraordinary care
+                    {{ heroslide.title }}
                   </h1>
                   <br />
                   <h6 class="text-h6">
-                    Excellent health care... Close to home.
+                    {{ heroslide.subtitle }}
                   </h6>
 
                   <br />
 
                   <p>
-                    <v-btn tile large class="font-weight" color="secondary"
-                      >more</v-btn
+                    <v-btn
+                      :to="heroslide.btnlink"
+                      tile
+                      large
+                      class="font-weight"
+                      color="secondary"
+                      >{{ heroslide.btntext }}</v-btn
                     >
                   </p>
                 </v-col>
@@ -79,25 +81,29 @@
             </v-container>
           </v-img>
         </v-carousel-item>
-        <!-- <v-carousel-item>
-          <v-img src="https://source.unsplash.com/pyraNb3UBYc" />
-        </v-carousel-item>
-        <v-carousel-item>
-          <v-img src="https://source.unsplash.com/BpT50qq5ySw" />
-        </v-carousel-item> -->
       </v-carousel>
     </v-card>
     <v-container>
       <v-card flat tile color="transparent" class="mt-n16 mx-auto ">
         <v-row class="d-flex">
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+              <!-- hero content here -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                animi eveniet, exercitationem vel at debitis!
+              </p>
+            </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+              <!-- hero content here -->
+            </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
-            <hero-card></hero-card>
+            <hero-card title="opening hours" btntext="click me" btnlink="/">
+            </hero-card>
+            <!-- hero content here -->
           </v-col>
         </v-row>
       </v-card>
@@ -114,6 +120,14 @@ export default {
     mHeading,
     heroCard,
   },
+  data: () => ({
+    heroslides: [
+      {
+        title: "some title",
+        subtitle: "sdjhj sda sduhaf afudshaufasd usdfa",
+      },
+    ],
+  }),
 };
 </script>
 

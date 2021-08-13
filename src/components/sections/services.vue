@@ -4,11 +4,10 @@
     subtitle="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia a, eveniet totam praesentium molestiae rerum?"
   >
     <v-row>
-      <v-col cols="12" sm="6" md="4" v-for="(service, i) in services" :key="i">
+      <v-col cols="6" sm="6" md="3" v-for="(service, i) in services" :key="i">
         <services-card
           :icon="service.icon"
           :title="service.title"
-          :desc="service.desc"
           :btntext="service.btntext"
           :btnlink="service.btnlink"
         ></services-card>

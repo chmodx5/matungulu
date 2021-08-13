@@ -7,7 +7,11 @@
           :order="turnLeft"
           class=" d-flex align-center justify-center pa-0"
         >
-          <v-img height="100%" :aspect-ratio="16 / 9" :src="img"></v-img>
+          <v-img
+            height="100%"
+            :aspect-ratio="16 / 9"
+            :src="require(`@/assets/img/${img}`)"
+          ></v-img>
         </v-col>
         <v-col md="6">
           <v-icon size="50">

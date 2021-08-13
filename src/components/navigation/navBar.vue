@@ -87,7 +87,9 @@
           >
             contact
           </v-btn>
-          <v-btn color="secondary" class="ml-3" tile>book appointment</v-btn>
+          <v-btn to="/appointment" color="secondary" class="ml-3" tile
+            >book appointment</v-btn
+          >
         </div>
 
         <div class="d-md-none">
