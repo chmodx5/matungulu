@@ -50,31 +50,29 @@
         delimiter-icon="mdi-minus"
         height="100%"
       >
-        <v-carousel-item v-for="(i, k) in 3" :key="k">
-          <v-img
-            src="https://source.unsplash.com/m3Oe8vSE88Y"
-            height="100%"
-            class="d-flex align-center"
-          >
+        <v-carousel-item v-for="(heroslide, k) in heroslides" :key="k">
+          <v-img :src="heroslide.img" height="100%" class="d-flex align-center">
             <v-container>
               <v-row style="">
                 <v-col md="8">
                   <h1 class="text-h2 font-weight-black">
-                    Lorem ipsum sit amet
+                    {{ heroslide.title }}
                   </h1>
                   <br />
                   <h6 class="text-h6">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Dicta aliquam in id assumenda veritatis eius quos delectus
-                    amet vitae ratione eos vel eveniet commodi magni ipsum quae,
-                    a vero eaque?
+                    {{ heroslide.subtitle }}
                   </h6>
 
                   <br />
 
                   <p>
-                    <v-btn tile large class="font-weight" color="secondary"
-                      >more</v-btn
+                    <v-btn
+                      :to="heroslide.btnlink"
+                      tile
+                      large
+                      class="font-weight"
+                      color="secondary"
+                      >{{ heroslide.btntext }}</v-btn
                     >
                   </p>
                 </v-col>
@@ -82,12 +80,6 @@
             </v-container>
           </v-img>
         </v-carousel-item>
-        <!-- <v-carousel-item>
-          <v-img src="https://source.unsplash.com/pyraNb3UBYc" />
-        </v-carousel-item>
-        <v-carousel-item>
-          <v-img src="https://source.unsplash.com/BpT50qq5ySw" />
-        </v-carousel-item> -->
       </v-carousel>
     </v-card>
     <v-container>
@@ -116,6 +108,10 @@ export default {
   components: {
     mHeading,
     heroCard,
+  },
+  data: () => ({}),
+  props: {
+    heroslides: Array,
   },
 };
 </script>

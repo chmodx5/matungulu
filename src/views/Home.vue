@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero></hero>
+    <hero :heroslides="heroSlides"></hero>
     <services :services="services"></services>
     <about
       title="Who we are"
@@ -174,6 +174,12 @@ export default {
       {
         img: "insurance/sanlam.png",
         title: "Sanlam Insurance",
+      },
+    ],
+    heroSlides: [
+      {
+        title: "some title",
+        subtitle: "sdjhj sda sduhaf afudshaufasd usdfa",
       },
     ],
   }),
