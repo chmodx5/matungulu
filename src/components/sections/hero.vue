@@ -93,6 +93,10 @@
           <v-col md="4" class="flex-grow-1 d-flex">
             <hero-card title="opening hours" btntext="click me" btnlink="/">
               <!-- hero content here -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                animi eveniet, exercitationem vel at debitis!
+              </p>
             </hero-card>
           </v-col>
           <v-col md="4" class="flex-grow-1 d-flex">
