@@ -10,12 +10,14 @@
         md="4"
         v-for="(testimonial, i) in testimonials"
         :key="i"
+        class="d-flex"
       >
         <testimonials-card
           :testimonial="testimonial.testimonial"
           :img="testimonial.img"
           :name="testimonial.name"
           :title="testimonial.title"
+          class="flex-grow-1"
         ></testimonials-card>
       </v-col>
     </v-row>
