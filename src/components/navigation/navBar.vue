@@ -9,7 +9,7 @@
       clipped-left
     >
       <v-container class="d-flex justify-center align-center">
-        <v-card color="" to="/" class="d-flex" width="200" flat>
+        <v-card color="" to="/" class="d-flex pa-0 ma-0" width="200" flat>
           <v-img
             src="./../../assets/matungulu-logo.jpg"
             height="100%"
@@ -95,6 +95,17 @@
             exact-active-class="my-active"
           >
             contact
+          </v-btn>
+          <v-btn
+            class="nav-btn mx-3"
+            text
+            color="secondary"
+            x-large
+            to="/faq"
+            :ripple="false"
+            exact-active-class="my-active"
+          >
+            faq
           </v-btn>
           <v-btn to="/appointment" color="secondary" class="ml-3" tile
             >book appointment</v-btn
