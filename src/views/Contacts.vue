@@ -59,37 +59,6 @@
                     href=""
                     ><v-icon>mdi-facebook</v-icon></v-btn
                   >
-
-                  <v-btn
-                    class="mx-1"
-                    :class="{ 'secondary--text': hover, white: hover }"
-                    icon
-                    tile
-                    outlined
-                    color="secondary"
-                    href=""
-                    ><v-icon>mdi-instagram</v-icon></v-btn
-                  >
-                  <v-btn
-                    class="mx-1"
-                    :class="{ 'secondary--text': hover, white: hover }"
-                    icon
-                    tile
-                    outlined
-                    color="secondary"
-                    href=""
-                    ><v-icon>mdi-twitter</v-icon></v-btn
-                  >
-                  <v-btn
-                    class="mx-1"
-                    :class="{ 'secondary--text': hover, white: hover }"
-                    icon
-                    tile
-                    outlined
-                    color="secondary"
-                    href=""
-                    ><v-icon>mdi-linkedin</v-icon></v-btn
-                  >
                 </div>
               </contact-card>
             </v-hover>
