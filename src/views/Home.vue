@@ -165,7 +165,7 @@ export default {
         title: "Liaison Insurance",
       },
       {
-        img: "insurance/madison.png",
+        img: "insurance/_madison.png",
         title: "Madison Insurance",
       },
       {
