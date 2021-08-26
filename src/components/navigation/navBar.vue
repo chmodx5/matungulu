@@ -169,14 +169,7 @@ export default {
         id: "inpatient",
         title: "in-patient",
       },
-      {
-        id: "laboratory",
-        title: "laboratory",
-      },
-      {
-        id: "pharmacy",
-        title: "inhouse pharmacy",
-      },
+
       {
         id: "maternity",
         title: "maternity",
@@ -185,10 +178,7 @@ export default {
         id: "optical",
         title: "optical services",
       },
-      {
-        id: "physiotherapy",
-        title: "physiotherapy",
-      },
+
       {
         id: "dental",
         title: "dental services",

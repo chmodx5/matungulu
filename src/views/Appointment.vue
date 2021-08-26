@@ -18,10 +18,10 @@
 
             <v-col cols="12" md="4">
               <v-text-field
-                v-model="lastname"
+                v-model="surname"
                 :rules="nameRules"
                 :counter="10"
-                label="Last name"
+                label="Surname"
                 required
                 outlined
                 style="border-radius: 0;"
@@ -33,7 +33,7 @@
                 v-model="lastname"
                 :rules="nameRules"
                 :counter="10"
-                label="phone number"
+                label="Last Name"
                 required
                 outlined
                 style="border-radius: 0;"
@@ -42,9 +42,10 @@
 
             <v-col cols="12" md="4">
               <v-text-field
-                v-model="email"
-                :rules="emailRules"
-                label="E-mail"
+                v-model="lastname"
+                :rules="nameRules"
+                :counter="10"
+                label="Phone Number"
                 required
                 outlined
                 style="border-radius: 0;"
@@ -140,6 +141,7 @@ export default {
     valid: false,
     firstname: "",
     lastname: "",
+    surname: "",
     nameRules: [
       (v) => !!v || "Name is required",
       (v) => v.length <= 10 || "Name must be less than 10 characters",
@@ -151,51 +153,6 @@ export default {
     ],
     services: [
       {
-        id: "outpatient",
-        icon: "mdi-hospital-building",
-        title: "Outpatient",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "inpatient",
-        icon: "mdi-bed-outline",
-        title: "In-patient",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "laboratory",
-        icon: "mdi-microscope",
-        title: "Laboratory",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "pharmacy",
-        icon: "mdi-pill",
-        title: "In-house pharmacy",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "maternity",
-        icon: "mdi-mother-nurse",
-        title: "Maternity",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
         id: "optical",
         icon: "mdi-glasses",
         title: "Optical services",
@@ -204,15 +161,7 @@ export default {
         btntext: "more",
         btnlink: "/services",
       },
-      {
-        id: "physiotherapy",
-        icon: "mdi-human-wheelchair",
-        title: "Physiotherapy",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
+
       {
         id: "dental",
         icon: "mdi-tooth-outline",
