@@ -11,8 +11,7 @@
             Do you need Emergency Medical Care?
           </h3>
           <p class="text-h6 font-weight-regular">
-            You can call us through the Call Centre on 0719073000 / 0732163000 /
-            020 6303000 or Our Accidents and Emergency Department on 0719073051
+            You can call the Emergency Call Centre on 0700 631 291.
           </p>
           <p>
             <v-btn to="/contacts" tile color="secondary" large
