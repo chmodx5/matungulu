@@ -1,5 +1,5 @@
 <template>
-  <default-section title="FAQ's">
+  <default-section>
     <v-expansion-panels tile hover>
       <v-expansion-panel
         active-class="secondary white--text"
