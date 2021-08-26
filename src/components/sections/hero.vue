@@ -144,6 +144,13 @@ export default {
         btntext: "about us",
         btnlink: "/about",
       },
+      {
+        title: "We are NHIF Accredited!",
+        subtitle: "",
+        img: "hero/nhif-guide.jpg",
+        btntext: "about us",
+        btnlink: "/about",
+      },
     ],
   }),
 };

@@ -18,7 +18,7 @@
           <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-map-marker-outline" title="location">
               <p class="text-caption">
-                Tala Market, Matungulu District, Machakos County
+                Tala Market Street, Matungulu Sub-County, Machakos County
               </p>
             </contact-card>
           </v-col>
