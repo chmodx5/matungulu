@@ -145,7 +145,7 @@ export default {
         title: "GA Insurance",
       },
       {
-        img: "insurance/heritage.jpg",
+        img: "insurance/_heritage.jpg",
         title: "Heritage Insurance",
       },
       {
