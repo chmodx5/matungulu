@@ -23,19 +23,19 @@ export default {
   data: () => ({
     faqs: [
       {
-        question: "blah blah blah",
+        question: "How can I book an appointment?",
         answer:
-          "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "You can call us at 0700 631 291. Alternatively, you can click the 'Book Appointment' button on the top-right corner of the website and fill in the form that opens.",
       },
       {
-        question: "blah blah ",
+        question: "Where is your facility located?",
         answer:
-          "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "We are located at Tala Market street, Matungulu sub-county, Machakos County. You can find our location on the ap in the 'Contacts' Page.",
       },
       {
-        question: "blah",
+        question: "Can I get a COVID-19 vaccine in your facility?",
         answer:
-          "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Currently, you cannot. However we can advise you where to get one.",
       },
     ],
   }),
