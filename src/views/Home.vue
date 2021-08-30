@@ -58,24 +58,6 @@ export default {
         btnlink: "/services",
       },
       {
-        id: "laboratory",
-        icon: "mdi-microscope",
-        title: "laboratory",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "pharmacy",
-        icon: "mdi-pill",
-        title: "in-house pharmacy",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
         id: "maternity",
         icon: "mdi-mother-nurse",
         title: "maternity",

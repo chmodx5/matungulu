@@ -32,7 +32,7 @@ export default {
         icon: "mdi-hospital-building",
         title: "outpatient",
         desc:
-          "How good it is to have a clinic where you can walk in during an emergency and be able to access professional medical care on an urgent basis. You don’t have to worry about long waits and you can wizard the clinic into the clinic any time of day and week.",
+          "How good it is to have a clinic where you can walk in during an emergency and be able to access professional medical care on an urgent basis. You don’t have to worry about long waits and you can wizard the clinic into the clinic any time of day and week.We offer laboratory and have an in-house pharmacy to serve your medicinal needs.",
       },
       {
         id: "inpatient",
@@ -42,24 +42,6 @@ export default {
         title: "in-patient",
         desc:
           "It is always best to have a good doctor that will take care of you and your whole family. Our team of qualified doctors can ensure prevention, coordination of care, management of disease, precaution, and solution of your disease.",
-      },
-      {
-        id: "laboratory",
-        img: "hero/lab.jpeg",
-        left: false,
-        icon: "mdi-microscope",
-        title: "laboratory",
-        desc:
-          "Our laboratory is well equipped and our lab technicians well qualified to perform laboratory procedures and give you reliable results.",
-      },
-      {
-        id: "pharmacy",
-        img: "hero/pharmacy.jpg",
-        left: true,
-        icon: "mdi-pill",
-        title: "inhouse pharmacy",
-        desc:
-          "Our pharmacy is well stocked to provide a wide selection of medications for any ailment you might have.",
       },
       {
         id: "maternity",
@@ -80,18 +62,9 @@ export default {
           "Our optical team is on site every Tuesday and Friday, and only an appointment away.",
       },
       {
-        id: "physiotherapy",
-        img: "hero/physio.jpg",
-        left: false,
-        icon: "mdi-human-wheelchair",
-        title: "physiotherapy",
-        desc:
-          "In your journeys, you might get many injuries that cannot be avoided. It is best to find a clinic that can service your injuries at the time you need it most. We can even offer a comprehensive treatment that combines exercise and rehabilitation therapy so that your injuries can he properly.",
-      },
-      {
         id: "dental",
         img: "hero/dental1.jpeg",
-        left: true,
+        left: false,
         icon: "mdi-tooth-outline",
         title: "dental services",
         desc:
@@ -100,11 +73,11 @@ export default {
       {
         id: "ultrasound",
         img: "hero/ultrasound.jpeg",
-        left: false,
+        left: true,
         icon: "mdi-face-recognition",
         title: "ultrasound",
         desc:
-          "Our ultrasound imaging will enable you see the progress of your unborn child, memories that will forever remain unforgetable.",
+          "Our ultrasound imaging will enable you see the progress of your unborn child, memories that will forever remain unforgettable.",
       },
     ],
   }),
