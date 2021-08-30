@@ -18,6 +18,18 @@
 
             <v-col cols="12" md="4">
               <v-text-field
+                v-model="lastname"
+                :rules="nameRules"
+                :counter="10"
+                label="Middle Name"
+                required
+                outlined
+                style="border-radius: 0;"
+              ></v-text-field>
+            </v-col>
+
+            <v-col cols="12" md="4">
+              <v-text-field
                 v-model="surname"
                 :rules="nameRules"
                 :counter="10"
@@ -33,13 +45,12 @@
                 v-model="lastname"
                 :rules="nameRules"
                 :counter="10"
-                label="Last Name"
+                label="ID Number"
                 required
                 outlined
                 style="border-radius: 0;"
               ></v-text-field>
             </v-col>
-
             <v-col cols="12" md="4">
               <v-text-field
                 v-model="lastname"
