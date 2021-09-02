@@ -40,7 +40,7 @@
           </m-heading>
           <br />
           <p class="text-capitalize">
-            tala market, matungulu district, machakos county
+            tala market street, matungulu sub-county, machakos county
           </p>
           <p>
             0700 631 291 / 0738 669 259
