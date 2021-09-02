@@ -65,27 +65,27 @@
                   Visiting Hours
                 </p>
               </div>
-              <div class="d-flex justify-space-between">
-                <p>
+              <div class="d-flex justify-space-between ma-0">
+                <p class="ma-0">
                   Morning
                 </p>
-                <p>
+                <p class="ma-0">
                   6.00AM to 7.30AM
                 </p>
               </div>
               <div class="d-flex justify-space-between">
-                <p>
+                <p class="ma-0">
                   Afternoon
                 </p>
-                <p>
+                <p class="ma-0">
                   12.30PM to 02.30PM
                 </p>
               </div>
               <div class="d-flex justify-space-between">
-                <p>
+                <p class="ma-0">
                   Evening
                 </p>
-                <p>
+                <p class="ma-0">
                   04.30PM to 7.00PM
                 </p>
               </div>
