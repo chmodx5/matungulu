@@ -53,7 +53,7 @@
             </v-col>
             <v-col cols="12" md="4">
               <v-text-field
-                v-model="lastname"
+                v-model="phone"
                 :rules="nameRules"
                 :counter="10"
                 label="Phone Number"
@@ -153,6 +153,7 @@ export default {
     firstname: "",
     lastname: "",
     surname: "",
+    phone: "",
     nameRules: [
       (v) => !!v || "Name is required",
       (v) => v.length <= 10 || "Name must be less than 10 characters",

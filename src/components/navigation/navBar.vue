@@ -67,9 +67,6 @@
                 v-on="on"
               >
                 services
-                <v-icon>
-                  mdi-arrow-down
-                </v-icon>
               </v-btn>
             </template>
             <v-list>
