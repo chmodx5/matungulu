@@ -2,6 +2,7 @@
   <div>
     <hero></hero>
     <services :services="services"></services>
+    <nhif></nhif>
     <about
       title="Who are we?"
       subtitle="We are a highly acclaimed level 3 medical facility geared towards providing better, personalized and affordable healthcare services."
@@ -32,6 +33,7 @@ import testimonials from "@/components/sections/testimonials.vue";
 import about from "@/components/sections/about.vue";
 import overlayParallax from "@/components/sections/overlayParallax.vue";
 import insurance from "@/components/sections/insurance.vue";
+import nhif from "@/components/sections/nhif.vue";
 
 export default {
   name: "Home",
@@ -171,7 +173,7 @@ export default {
   components: {
     hero,
     services,
-
+    nhif,
     testimonials,
     about,
     insurance,
