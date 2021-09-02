@@ -76,15 +76,6 @@ export default {
         btnlink: "/services",
       },
       {
-        id: "physiotherapy",
-        icon: "mdi-human-wheelchair",
-        title: "physiotherapy",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
         id: "dental",
         icon: "mdi-tooth-outline",
         title: "dental services",
@@ -104,6 +95,10 @@ export default {
       },
     ],
     insurances: [
+      {
+        img: "insurance/nhif.png",
+        title: "NHIF",
+      },
       {
         img: "insurance/aar.jpeg",
         title: "AAR insurance",
@@ -151,10 +146,6 @@ export default {
       {
         img: "insurance/_madison.png",
         title: "Madison Insurance",
-      },
-      {
-        img: "insurance/nhif.png",
-        title: "NHIF",
       },
       {
         img: "insurance/power.png",

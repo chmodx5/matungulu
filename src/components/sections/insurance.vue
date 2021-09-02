@@ -1,6 +1,6 @@
 <template>
   <default-section
-    title="Insurance cards accepted"
+    title="Our Insurance Partner"
     subtitle="We provide a wide range of insurance coverage."
     class=""
   >
