@@ -9,8 +9,9 @@
           <br />
           <p>
             Matungulu Medical Health and Wellness Centre is an NHIF accredited
-            17-bed private medical facility situated in the heart of Tala
-            Market, well placed to serve both Kangundo and Matungulu Districts
+            17-bed private medical facility situated along Tala Market street,
+            Matungulu sub-county, well placed to serve both Kangundo and
+            Matungulu Sub-Counties.
           </p></v-col
         >
 
