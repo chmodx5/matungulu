@@ -70,7 +70,7 @@
                   Morning
                 </p>
                 <p class="ma-0">
-                  6.00AM to 7.30AM
+                  6.00 <small>am</small> to 7.30 <small>am</small>
                 </p>
               </div>
               <div class="d-flex justify-space-between">
@@ -78,7 +78,7 @@
                   Afternoon
                 </p>
                 <p class="ma-0">
-                  12.30PM to 02.30PM
+                  12.30 <small>pm</small> to 02.30 <small>pm</small>
                 </p>
               </div>
               <div class="d-flex justify-space-between">
@@ -86,7 +86,7 @@
                   Evening
                 </p>
                 <p class="ma-0">
-                  04.30PM to 7.00PM
+                  04.30 <small>pm</small> to 7.00 <small>pm</small>
                 </p>
               </div>
             </hero-card>
