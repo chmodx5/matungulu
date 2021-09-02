@@ -57,26 +57,36 @@
               <!-- hero content here -->
               <div class="d-flex justify-space-between">
                 <p mb-3>
-                  Monday - Saturday
+                  We are open 24 Hours a day, 7 days a week.
                 </p>
-                <p>
-                  Open
+              </div>
+              <div class="d-flex justify-space-between">
+                <p class="font-weight-bold text-h6">
+                  Visiting Hours
                 </p>
               </div>
               <div class="d-flex justify-space-between">
                 <p>
-                  Sundays
+                  Morning
                 </p>
                 <p>
-                  Open
+                  6.00AM to 7.30AM
                 </p>
               </div>
               <div class="d-flex justify-space-between">
                 <p>
-                  Public Holidays
+                  Afternoon
                 </p>
                 <p>
-                  Open
+                  12.30PM to 02.30PM
+                </p>
+              </div>
+              <div class="d-flex justify-space-between">
+                <p>
+                  Evening
+                </p>
+                <p>
+                  04.30PM to 7.00PM
                 </p>
               </div>
             </hero-card>
@@ -84,29 +94,26 @@
           <v-col cols="12" md="4" class="flex-grow-1 d-flex">
             <hero-card
               title="Specialist Services"
-              btntext="click me"
-              btnlink="/"
+              btntext="Book now!"
+              btnlink="/appointment"
             >
               <!-- hero content here -->
               <p text-h4 mb-3>
-                Optical, Dental and Physiotherapy Services.
+                Optical and Dental Services.
               </p>
               <p>
-                Available on Appointment on Tuesdays and Fridays.
+                Available only on Appointment on Tuesdays and Fridays.
               </p>
             </hero-card>
           </v-col>
           <v-col cols="12" md="4" class="flex-grow-1 d-flex">
             <hero-card
               title="Emergency Cases"
-              btntext="click me"
+              btntext="Contacts"
               btnlink="/contacts"
             >
               <p mb-3>
                 Call us at 0700 631 291
-              </p>
-              <p>
-                Or our office at 0738 669 259
               </p>
             </hero-card>
             <!-- hero content here -->
