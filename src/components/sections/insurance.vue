@@ -1,9 +1,5 @@
 <template>
-  <default-section
-    title="Our Insurance Partners"
-    subtitle="We provide a wide range of insurance coverage."
-    class=""
-  >
+  <default-section title="Our Insurance Partners" class="">
     <!-- <v-row>
       <v-col
         class=""

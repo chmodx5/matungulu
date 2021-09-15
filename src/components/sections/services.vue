@@ -1,8 +1,5 @@
 <template>
-  <default-section
-    title="Care you can believe in"
-    subtitle="These are the services we offer for bettering the human condition, one patient at a time."
-  >
+  <default-section title="Care you can believe in">
     <v-row class="pb-6">
       <v-col cols="6" sm="6" md="4" v-for="(service, i) in services" :key="i">
         <services-card

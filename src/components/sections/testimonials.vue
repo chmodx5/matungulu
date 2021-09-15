@@ -1,8 +1,5 @@
 <template>
-  <default-section
-    title="testimonials"
-    subtitle="Here is what some of our previous clients have to say about our services"
-  >
+  <default-section title="what our clients say">
     <v-row justify="center">
       <v-col
         cols="12"
