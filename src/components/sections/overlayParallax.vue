@@ -7,12 +7,9 @@
     >
       <v-container class=" mx-auto" style="width:100vw">
         <div class=" ">
-          <h3 class="text-h3 text-capitalize font-weight-black">
+          <h3 class="text-h3 text-capitalize font-weight-black mb-8">
             Do you need Emergency Medical Care?
           </h3>
-          <p class="text-h6 font-weight-regular">
-            You can call the Emergency Call Centre on 0700 631 291.
-          </p>
           <p>
             <v-btn to="/contacts" tile color="secondary" large
               >contact us</v-btn

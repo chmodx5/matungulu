@@ -32,7 +32,7 @@ export default {
         icon: "mdi-hospital-building",
         title: "outpatient",
         desc:
-          "How good it is to have a clinic where you can walk in during an emergency and be able to access professional medical care on an urgent basis. You don’t have to worry about long waits and you can wizard the clinic into the clinic any time of day and week.We offer laboratory and have an in-house pharmacy to serve your medicinal needs.",
+          "Matungulu Medical Health and Wellness Centre is committed to quality healthcare provision ranging from routine health examination to managing chronic conditions. Ourteam of qualified and highly experienced healthcare personnel are committed to promotegood health through health screening, wellness and prevention, diagnosis, treatment and health education.Our outpatient services include:  General Consultation  Laboratory  Pharmacy  Mother and Child Health  Nutritional Counselling",
       },
       {
         id: "inpatient",
