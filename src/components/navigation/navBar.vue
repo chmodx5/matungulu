@@ -9,7 +9,7 @@
       clipped-left
     >
       <v-container class="d-flex justify-center align-center">
-        <v-card color="" to="/" class="d-flex pa-0 ma-0" width="200" flat>
+        <v-card color="" to="/" class="d-flex pa-0 ma-0" width="220" flat>
           <v-img
             src="./../../assets/matungulu-logo.jpg"
             height="100%"
@@ -18,8 +18,8 @@
           >
           </v-img>
           <div>
-            <p class="text-capitalize text-body-2 font-weight-black ma-0">
-              matungulu medical and wellness center
+            <p class="text-capitalize text-caption font-weight-black ma-0">
+              matungulu medical health and wellness center
             </p>
             <p class="text-caption ma-0 font-italic text-capitalize">
               we value your health
@@ -91,7 +91,7 @@
             :ripple="false"
             exact-active-class="my-active"
           >
-            contact
+            contact us
           </v-btn>
           <v-btn
             class="nav-btn mx-3"
@@ -117,7 +117,7 @@
 
     <v-navigation-drawer v-model="drawer" temporary width="300" app clipped>
       <div class="pa-3">
-        <v-card color="" to="/" class="d-flex" width="200" flat>
+        <v-card color="" to="/" class="d-flex" width="220" flat>
           <v-img
             src="./../../assets/matungulu-logo.jpg"
             height="100%"
