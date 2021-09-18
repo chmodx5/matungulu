@@ -1,8 +1,5 @@
 <template>
-  <default-section
-    subtitle="we provide a wide range of services"
-    title="services"
-  >
+  <default-section title="the services we provide">
     <service-section
       v-for="(service, i) in services"
       :key="i"
