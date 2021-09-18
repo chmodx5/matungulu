@@ -19,7 +19,7 @@
       </p>
     </about>
     <overlay-parallax></overlay-parallax>
-    <insurance :insurances="insurances"></insurance>
+    <insurance id="insurance" :insurances="insurances"></insurance>
 
     <testimonials></testimonials>
   </div>

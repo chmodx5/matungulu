@@ -1,6 +1,28 @@
 <template>
   <default-section>
     <v-expansion-panels tile hover>
+      <v-expansion-panel active-class="secondary white--text">
+        <v-expansion-panel-header class="font-weight-bold text-h6">
+          Do you accept other medical insurance cards?
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          Yes we do click
+          <router-link to="/" @click="$vuetify.goTo('#insurance')"
+            >here</router-link
+          >
+          to view
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel active-class="secondary white--text">
+        <v-expansion-panel-header class="font-weight-bold text-h6">
+          Where is the hospital located at?
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          Matungulu Medical is located in the heart of Tala Market Street just
+          before Katine road turn-off
+          <router-link to="/contacts">click here to view the map</router-link>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
       <v-expansion-panel
         active-class="secondary white--text"
         v-for="(faq, i) in faqs"
@@ -27,15 +49,7 @@ export default {
         answer:
           "Yes, MMHWC is accredited by NHIF to provide both outpatient and inpatient services to NHIF beneficiaries",
       },
-      {
-        question: "Do you accept other medical insurance cards?",
-        answer: "Yes we do.",
-      },
-      {
-        question: "Where is the hospital located at?",
-        answer:
-          "Matungulu Medical is located in the heart of Tala Market just before the Katine Road turn-off.",
-      },
+
       {
         question: "What do I need to carry during my doctor's visit?",
         answer:

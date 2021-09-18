@@ -1,5 +1,5 @@
 <template>
-  <default-section title="Our Insurance Partners" class="">
+  <default-section id="insurance" title="Our Insurance Partners" class="">
     <!-- <v-row>
       <v-col
         class=""
