@@ -49,19 +49,7 @@ export default {
         answer:
           "Yes, MMHWC is accredited by NHIF to provide both outpatient and inpatient services to NHIF beneficiaries",
       },
-<<<<<<< HEAD
 
-=======
-      {
-        question: "Do you accept other medical insurance cards?",
-        answer: "Yes we do. Click here to view.",
-      },
-      {
-        question: "Where is the hospital located at?",
-        answer:
-          "Matungulu Medical is located in the heart of Tala Market just before the Katine Road turn-off. Click here to view map.",
-      },
->>>>>>> 9c230cd847bcef4376d76651a6f9254c00ec3a6f
       {
         question: "What do I need to carry during my doctor's visit?",
         answer:
