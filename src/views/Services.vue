@@ -1,8 +1,5 @@
 <template>
-  <default-section
-    subtitle="we provide a wide range of services"
-    title="services"
-  >
+  <default-section title="the services we provide">
     <service-section
       v-for="(service, i) in services"
       :key="i"
@@ -41,7 +38,7 @@ export default {
         icon: "mdi-bed-outline",
         title: "in-patient",
         desc:
-          "It is always best to have a good doctor that will take care of you and your whole family. Our team of qualified doctors can ensure prevention, coordination of care, management of disease, precaution, and solution of your disease.",
+          "MMHWC is a 17 bed facility operating 24 hours. We have clean and hygienic wards designed to meet all patient’s needs. We are committed to providing the best care during hospital stay through excellent services from a qualified team of healthcare personnel. We admit clients with various medical cover plans including NHIF as well as cash paying clients.",
       },
       {
         id: "maternity",
@@ -50,7 +47,7 @@ export default {
         icon: "mdi-mother-nurse",
         title: "maternity",
         desc:
-          "We provide pre- and post-natal care for you and your baby. Weprovide baby care including immunization and vaccination for you and your whole family.",
+          "We place emphasis on safety and quality care during and after the delivery process. We have a team of experienced medical professionals geared towards providing exceptional, customized and compassionate maternal services.",
       },
       {
         id: "optical",
@@ -59,7 +56,7 @@ export default {
         icon: "mdi-glasses",
         title: "optical services",
         desc:
-          "Our optical team is on site every Tuesday and Friday, and only an appointment away.",
+          "We provide the best eye care services for the entire family. Our primary service include comprehensive eye examination that analyzes the health as well as the visual function. These services are provided by experienced professionally trained medical staff.",
       },
       {
         id: "dental",
@@ -68,14 +65,14 @@ export default {
         icon: "mdi-tooth-outline",
         title: "dental services",
         desc:
-          "Our dental team is on site every Tuesday and Friday, and only an appointment away",
+          "Matungulu Medical runs a fully equipped and modern dental clinic offering a wide range of dental services. We offer the best, affordable and professional dental care to children and adults. Come get that healthy white smile here.",
       },
       {
         id: "ultrasound",
         img: "hero/ultrasound.jpeg",
         left: true,
         icon: "mdi-face-recognition",
-        title: "ultrasound",
+        title: "Imaging Services",
         desc:
           "Our ultrasound imaging will enable you see the progress of your unborn child, memories that will forever remain unforgettable.",
       },

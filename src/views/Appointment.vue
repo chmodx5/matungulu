@@ -126,6 +126,17 @@
                 </v-date-picker>
               </v-menu>
             </v-col>
+            <v-col cols="12" md="4">
+              <v-text-field
+                v-model="messageinput"
+                :rules="nameRules"
+                :counter="255"
+                label="Message(Optional)"
+                required
+                outlined
+                style="border-radius: 0;"
+              ></v-text-field>
+            </v-col>
             <v-col cols="12">
               <v-btn
                 large
