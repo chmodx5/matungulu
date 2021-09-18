@@ -29,12 +29,12 @@ export default {
       },
       {
         question: "Do you accept other medical insurance cards?",
-        answer: "Yes we do.",
+        answer: "Yes we do. Click here to view.",
       },
       {
         question: "Where is the hospital located at?",
         answer:
-          "Matungulu Medical is located in the heart of Tala Market just before the Katine Road turn-off.",
+          "Matungulu Medical is located in the heart of Tala Market just before the Katine Road turn-off. Click here to view map.",
       },
       {
         question: "What do I need to carry during my doctor's visit?",
