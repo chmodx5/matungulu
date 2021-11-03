@@ -1,7 +1,7 @@
 <template>
   <about
-    title="Healthcare That Cares"
-    subtitle="We are geared towards providing better and affordable healthcare service."
+    title="Healthcare That Counts"
+    subtitle=""
     img="hero/doctor.jpg"
     title2="About us"
   >
@@ -20,5 +20,8 @@
 import about from "@/components/sections/about.vue";
 export default {
   components: { about },
+  mounted: function() {
+    this.$vuetify.goTo(0);
+  },
 };
 </script>

@@ -78,7 +78,7 @@
                   Afternoon
                 </p>
                 <p class="ma-0">
-                  12.30 <small>pm</small> to 02.30 <small>pm</small>
+                  12.30 <small>pm</small> to 2.30 <small>pm</small>
                 </p>
               </div>
               <div class="d-flex justify-space-between">
@@ -86,7 +86,7 @@
                   Evening
                 </p>
                 <p class="ma-0">
-                  04.30 <small>pm</small> to 7.00 <small>pm</small>
+                  4.30 <small>pm</small> to 7.00 <small>pm</small>
                 </p>
               </div>
             </hero-card>
@@ -149,6 +149,13 @@ export default {
           "Remember to always wear a mask, sanitize or wash your hands with soap regularly and keep social distance.",
         img: "hero/corona1.jpeg",
         btntext: "about us",
+        btnlink: "/about",
+      },
+      {
+        title: "We are NHIF accredited!",
+        subtitle: "",
+        img: "hero/corona1.jpeg",
+        btntext: "other insurance partners",
         btnlink: "/about",
       },
     ],

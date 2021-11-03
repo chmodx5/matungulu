@@ -31,23 +31,23 @@ export default {
     testimonials: [
       {
         testimonial:
-          "The doctors have always been willing to answer any question I had, had time to make suggestions and were very helpful before and after I delieredmy child.Thank you for your kindness and help",
+          " I have been a client at MATUNGULU MEDICAL HEALTH AND WELLNESS CENTRE for over 5 years today and counting. Matungulu Medical is my health facility of choice for their reliability, affordability and compassion always exhibited by the medical staff and even the general personnel. Their services  are exemplary .",
         img: "hero/maternity3.jpeg",
-        name: "Margaret",
+        name: "Gerald",
         title: "patient",
       },
       {
         testimonial:
-          "Their pure concern for my health has kept me going back for their treatment and advice each time I have needed it. No time have I walked in to their front door and not met a smile from their staff, that is reassuring even when you are not feeling well.",
+          " I have had tonsils trouble for quite a while and since I visited MATUNGULU MEDICAL CENTRE, everything has changed. They have high quality doctors over there not to forget to mention how they run their operations with  professionalism!  I'd advise anyone having any sort of illness to try them out! Their service is just top notch!👌🏾",
         img: "hero/test1.jpeg",
-        name: "Linda",
+        name: "Susan",
         title: "patient",
       },
       {
         testimonial:
-          "My husband and I, and now our newborn daughter, have been going to Matungulu Medical for treatment of all our health issues for almost five years now, we haven't had any isues nor any reasons to change them as our medical practitioners.",
+          "My family and I have been using this facility for all our healthcare related issues and they have always served us well. The staff are friendly,the facility is clean and the service delivery is excellent. I would recommend MMHWC to anyone who is looking for premium healthcare.",
         img: "hero/test3.jpeg",
-        name: "Mrs.Musyoka",
+        name: "Cephas",
         title: "patient",
       },
     ],

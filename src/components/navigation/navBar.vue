@@ -19,7 +19,7 @@
           </v-img>
           <div>
             <p class="text-capitalize text-caption font-weight-black ma-0">
-              matungulu medical health and wellness center
+              matungulu medical health and wellness center ltd
             </p>
             <p class="text-caption ma-0 font-italic text-capitalize">
               we value your health
@@ -29,7 +29,7 @@
 
         <v-spacer></v-spacer>
 
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-inline-block">
           <v-btn
             class="nav-btn mx-3"
             text
@@ -53,35 +53,18 @@
             about
           </v-btn>
 
-          <v-menu offset-y open-on-hover>
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn
-                class="nav-btn mx-3"
-                text
-                color="secondary"
-                x-large
-                to="/services"
-                :ripple="false"
-                exact-active-class="my-active"
-                v-bind="attrs"
-                v-on="on"
-              >
-                services
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item
-                to="/services"
-                v-for="(service, index) in services"
-                :key="index"
-                @click="$vuetify.goTo(`#${service.id}`)"
-              >
-                <v-list-item-title class="text-capitalize">{{
-                  service.title
-                }}</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
+          <v-btn
+            class="nav-btn mx-3"
+            text
+            color="secondary"
+            x-large
+            to="/services"
+            :ripple="false"
+            exact-active-class="my-active"
+          >
+            services
+          </v-btn>
+
           <v-btn
             class="nav-btn mx-3"
             text
@@ -104,7 +87,8 @@
           >
             faq
           </v-btn>
-          <v-btn to="/appointment" color="secondary" class="ml-3" tile
+
+          <v-btn to="/appointment" color="secondary" class="" tile
             >book appointment</v-btn
           >
         </div>
@@ -127,7 +111,7 @@
           </v-img>
           <div>
             <p class="text-capitalize text-body-2 font-weight-black ma-0">
-              matungulu medical and wellness center
+              matungulu medical and wellness center ltd
             </p>
             <p class="text-caption ma-0 font-italic text-capitalize">
               we value your health

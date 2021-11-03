@@ -23,8 +23,7 @@
       </p>
       <p>
         <v-btn
-          :to="btnlink"
-          @click="$vuetify.goTo(`#${id}`)"
+          :to="`${btnlink}/${id}`"
           tile
           :class="{ 'secondary--text': hover, white: hover, secondary: !hover }"
           >{{ btntext }}</v-btn
@@ -43,5 +42,6 @@ export default {
     btntext: String,
     btnlink: String,
   },
+  computed: {},
 };
 </script>

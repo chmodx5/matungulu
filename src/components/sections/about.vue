@@ -23,7 +23,7 @@
 
     <!-- section containing the mission statements -->
     <v-row v-if="$route.path != '/'">
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="4" class="d-flex">
         <mission-card icon="mdi-table-eye" title="our vision">
           <p>
             Matungulu Medical Health and Wellness Centre is committed to
@@ -32,7 +32,7 @@
           </p>
         </mission-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="4" class="d-flex">
         <mission-card icon="mdi-walk" title="our mission">
           <p>
             Our Mission is to passionately pursue the health and well-being of
@@ -41,7 +41,7 @@
           </p>
         </mission-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="4" class="d-flex">
         <mission-card
           icon="mdi-target"
           title="core value"

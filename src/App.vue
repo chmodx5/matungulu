@@ -29,13 +29,7 @@ export default {
     navBar,
     modFooter,
   },
-  data: () => ({
-    offsetTop: 0,
-  }),
-  methods: {
-    onScroll(e) {
-      this.offsetTop = e.target.scrollTop;
-    },
-  },
+  data: () => ({}),
+  methods: {},
 };
 </script>

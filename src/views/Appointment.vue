@@ -1,7 +1,7 @@
 <template>
   <default-section title="book appointment">
     <template>
-      <v-form v-model="valid">
+      <v-form ref="form" v-model="valid" @submit.prevent="sendEmail">
         <v-container>
           <v-row>
             <v-col cols="12" md="4">
@@ -13,6 +13,7 @@
                 required
                 outlined
                 style="border-radius: 0;"
+                name="firstname"
               ></v-text-field>
             </v-col>
 
@@ -25,6 +26,7 @@
                 required
                 outlined
                 style="border-radius: 0;"
+                name="lastname"
               ></v-text-field>
             </v-col>
 
@@ -37,35 +39,36 @@
                 required
                 outlined
                 style="border-radius: 0;"
+                name="surname"
               ></v-text-field>
             </v-col>
 
             <v-col cols="12" md="4">
               <v-text-field
                 v-model="idnumber"
-                :rules="nameRules"
                 :counter="10"
                 label="ID Number"
                 required
                 outlined
                 style="border-radius: 0;"
+                name="id_number"
               ></v-text-field>
             </v-col>
             <v-col cols="12" md="4">
               <v-text-field
                 v-model="phone"
-                :rules="nameRules"
                 :counter="10"
                 label="Phone Number"
                 required
                 outlined
                 style="border-radius: 0;"
+                name="phone_number"
               ></v-text-field>
             </v-col>
 
             <v-col cols="12" md="4">
               <v-select
-                v-model="select"
+                v-model="servicemodel"
                 hint="select service"
                 :items="services"
                 item-text="title"
@@ -76,12 +79,14 @@
                 single-line
                 outlined
                 style="border-radius: 0;"
+                name="service"
+                :rules="dateRules"
               ></v-select>
             </v-col>
 
             <v-col cols="12" md="4">
               <v-select
-                v-model="select"
+                v-model="timemodel"
                 hint="select time"
                 :items="time"
                 item-text="time"
@@ -91,6 +96,8 @@
                 single-line
                 outlined
                 style="border-radius: 0;"
+                name="time"
+                :rules="dateRules"
               ></v-select>
             </v-col>
 
@@ -106,16 +113,30 @@
               >
                 <template v-slot:activator="{ on, attrs }">
                   <v-text-field
-                    v-model="date"
+                    v-model="datemodel"
                     label="select date"
                     readonly
                     v-bind="attrs"
                     v-on="on"
                     outlined
                     style="border-radius: 0;"
+                    name="date"
+                    :rules="dateRules"
                   ></v-text-field>
                 </template>
-                <v-date-picker v-model="date" no-title scrollable>
+                <v-date-picker
+                  :max="
+                    new Date(
+                      Date.now() - new Date().getTimezoneOffset() * 60000
+                    )
+                      .toISOString()
+                      .substr(0, 10)
+                  "
+                  min="1950-01-01"
+                  v-model="datemodel"
+                  no-title
+                  scrollable
+                >
                   <v-spacer></v-spacer>
                   <v-btn text color="primary" @click="menu = false">
                     Cancel
@@ -128,16 +149,17 @@
             </v-col>
             <v-col cols="12" md="4">
               <v-text-field
-                v-model="messageinput"
-                :rules="nameRules"
+                v-model="messagemodel"
+                :rules="messageRules"
                 :counter="255"
                 label="Message(Optional)"
                 required
                 outlined
                 style="border-radius: 0;"
+                name="message"
               ></v-text-field>
             </v-col>
-            <v-col cols="12">
+            <v-col cols="12" class="d-flex">
               <v-btn
                 large
                 outlined
@@ -145,10 +167,14 @@
                 color="white"
                 class="mr-4 secondary"
                 type="submit"
-                :disabled="invalid"
+                :disabled="!valid"
               >
                 submit
               </v-btn>
+              <v-alert v-if="form_success_alert" tile type="success"
+                >appointment booking request sent successfully we will contact
+                you shortly</v-alert
+              >
             </v-col>
           </v-row>
         </v-container>
@@ -158,53 +184,35 @@
 </template>
 <script>
 import defaultSection from "@/components/layouts/defaultSection.vue";
+import emailjs from "emailjs-com";
 export default {
   data: () => ({
+    form_success_alert: false,
     valid: false,
     firstname: "",
     lastname: "",
     surname: "",
     phone: "",
     idnumber: "",
+    timemodel: "",
+    datemodel: "",
+    servicemodel: "",
+    messagemodel: "",
+    date: null,
     nameRules: [
       (v) => !!v || "Name is required",
-      (v) => v.length <= 10 || "Name must be less than 10 characters",
+      // (v) => v.length <= 20 || "Name must be less than 10 characters",
     ],
+    messageRules: [
+      // (v) => v.length <= 300 || "Name must be less than 300 characters",
+    ],
+    dateRules: [(v) => !!v || "Date is required"],
     email: "",
     emailRules: [
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+/.test(v) || "E-mail must be valid",
     ],
-    services: [
-      {
-        id: "optical",
-        icon: "mdi-glasses",
-        title: "Optical services",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-
-      {
-        id: "dental",
-        icon: "mdi-tooth-outline",
-        title: "Dental services",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-      {
-        id: "ultrasound",
-        icon: "mdi-face-recognition",
-        title: "Ultrasound",
-        desc:
-          "this is just some random desc purely because i im not creative enough to write something meaningful",
-        btntext: "more",
-        btnlink: "/services",
-      },
-    ],
+    services: ["optical", "dental", "ultrasound"],
     time: [
       "8 - 9am",
       "9 - 10am",
@@ -223,13 +231,39 @@ export default {
       { state: "New York", abbr: "NY" },
     ],
     radioGroup: 1,
-    date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-      .toISOString()
-      .substr(0, 10),
+
     menu: false,
   }),
   components: {
     defaultSection,
+  },
+  mounted: function() {
+    this.$vuetify.goTo(0);
+  },
+  methods: {
+    sendEmail(e) {
+      emailjs
+        .sendForm(
+          "service_spbem2j",
+          "template_0vqnck5",
+          e.target,
+          "user_pKj9DgOGVwIBSkyrtbwG7"
+        )
+        .then(
+          (result) => {
+            this.form_success_alert = true;
+
+            this.$refs.form.reset();
+
+            setTimeout(() => (this.form_success_alert = false), 5000);
+
+            console.log("SUCCESS!", result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    },
   },
 };
 </script>

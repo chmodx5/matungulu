@@ -1,11 +1,15 @@
 <template>
-  <v-card flat min-height="300" color="" class="">
-    <v-row align="center" class="">
+  <v-card
+    outlined
+    color=""
+    class=" px-4 py-5 mt-10 d-flex align-center flex-grow-1 grey lighten-3"
+  >
+    <v-row align="center" class="px-6 ">
       <v-col
         cols="12"
         md="6"
         :order-md="turnLeft"
-        class=" d-flex align-center justify-center pa-0"
+        class=" d-flex align-center justify-center pa-0 yellow"
       >
         <v-img
           height="100%"
@@ -13,7 +17,7 @@
           :src="require(`@/assets/img/${img}`)"
         ></v-img>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="">
         <v-icon size="50">
           {{ icon }}
         </v-icon>

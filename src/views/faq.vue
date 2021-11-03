@@ -7,9 +7,25 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           Yes we do click
-          <router-link to="/" @click="$vuetify.goTo('#insurance')"
-            >here</router-link
-          >
+
+          <v-dialog v-model="dialog">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn text dark v-bind="attrs" v-on="on">
+                here
+              </v-btn>
+            </template>
+            <v-card style="position:relative;">
+              <insurance />
+              <div style="position:absolute; top:0; left:0;">
+                <div>
+                  <v-btn icon color="secondary" @click="dialog = false"
+                    ><v-icon>mdi-close</v-icon></v-btn
+                  >
+                </div>
+              </div>
+            </v-card>
+          </v-dialog>
+
           to view
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -20,7 +36,23 @@
         <v-expansion-panel-content>
           Matungulu Medical is located in the heart of Tala Market Street just
           before Katine road turn-off
-          <router-link to="/contacts">click here to view the map</router-link>
+          <v-dialog v-model="dialog">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn text dark v-bind="attrs" v-on="on">
+                click here to view the map
+              </v-btn>
+            </template>
+            <v-card style="position:relative;">
+              <my-map />
+              <div style="position:absolute; top:0; left:0;">
+                <div>
+                  <v-btn icon color="secondary" @click="dialog = false"
+                    ><v-icon>mdi-close</v-icon></v-btn
+                  >
+                </div>
+              </div>
+            </v-card>
+          </v-dialog>
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel
@@ -41,8 +73,12 @@
 
 <script>
 import defaultSection from "@/components/layouts/defaultSection.vue";
+import insurance from "@/components/sections/insurance.vue";
+import myMap from "@/components/myMap.vue";
 export default {
   data: () => ({
+    homeID: "insurance",
+    dialog: false,
     faqs: [
       {
         question: "Is Matungulu Medical empanelled by NHIF?",
@@ -72,6 +108,13 @@ export default {
       },
     ],
   }),
-  components: { defaultSection },
+  components: { defaultSection, insurance, myMap },
+  mounted: function() {
+    if (this.$route.params.id) {
+      this.$vuetify.goTo("#" + this.$route.params.id);
+    } else {
+      this.$vuetify.goTo(0);
+    }
+  },
 };
 </script>

@@ -5,7 +5,7 @@
     <nhif></nhif>
     <about
       title="Who are we?"
-      subtitle="We are a highly acclaimed level 3 medical facility geared towards providing better, personalized and affordable healthcare services."
+      subtitle="We are an acclaimed level 3 medical facility geared towards providing quality, reliable and affordable healthcare"
       img="insurance/sindano.jpg"
       title2="About us"
       btnlink="/about"
@@ -13,31 +13,113 @@
     >
       <p>
         We offer round-the-clock inpatient, outpatient, laboratory and maternity
-        services. We are a recognized and highly acclaimed level three medical
+        services. We are a recognized and an acclaimed level three medical
         facility in the region serving the community as well as institutional
         clients.
       </p>
     </about>
-    <overlay-parallax></overlay-parallax>
+    <!-- <overlay-parallax></overlay-parallax> -->
     <insurance id="insurance" :insurances="insurances"></insurance>
 
     <testimonials></testimonials>
+
+    <default-section title="tell us something">
+      <template>
+        <v-form ref="form" v-model="valid" @submit.prevent="sendEmail">
+          <v-container>
+            <v-row>
+              <v-col cols="12" md="6">
+                <v-text-field
+                  v-model="name_model"
+                  :rules="full_name_rules"
+                  :counter="10"
+                  label="Full Name"
+                  required
+                  outlined
+                  style="border-radius: 0;"
+                  name="from_name"
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-text-field
+                  v-model="email_model"
+                  :rules="email_rules"
+                  :counter="10"
+                  label="Email"
+                  required
+                  outlined
+                  style="border-radius: 0;"
+                  name="from_email"
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12" md="12">
+                <v-textarea
+                  v-model="text_model"
+                  :rules="text_rules"
+                  outlined
+                  label="Your feedback"
+                  auto-grow
+                  style="border-radius: 0;"
+                  name="message"
+                ></v-textarea>
+              </v-col>
+
+              <v-col cols="12" class="d-flex">
+                <v-btn
+                  large
+                  outlined
+                  tile
+                  color="secondary"
+                  class="mr-4 "
+                  type="submit"
+                  :disabled="!valid"
+                >
+                  submit
+                </v-btn>
+                <v-alert v-if="form_success_alert" tile type="success"
+                  >message sent successfully</v-alert
+                >
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-form>
+      </template>
+    </default-section>
   </div>
 </template>
 
 <script>
+import emailjs from "emailjs-com";
 import hero from "@/components/sections/hero.vue";
 import services from "@/components/sections/services.vue";
-
 import testimonials from "@/components/sections/testimonials.vue";
 import about from "@/components/sections/about.vue";
 import overlayParallax from "@/components/sections/overlayParallax.vue";
 import insurance from "@/components/sections/insurance.vue";
 import nhif from "@/components/sections/nhif.vue";
+import defaultSection from "@/components/layouts/defaultSection.vue";
 
 export default {
   name: "Home",
   data: () => ({
+    valid: true,
+    form_success_alert: false,
+    form_error_alert: false,
+    name_model: null,
+    email_model: null,
+    text_model: null,
+    full_name_rules: [
+      (v) => !!v || "full name is required",
+      (v) => (v && v.length >= 10) || "Name must be more than 10 characters",
+    ],
+    email_rules: [
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+    ],
+    text_rules: [
+      (v) => !!v || "text is name is required",
+      (v) => (v && v.length >= 50) || "Name must be more than 50 characters",
+    ],
     services: [
       {
         id: "outpatient",
@@ -169,6 +251,53 @@ export default {
     about,
     insurance,
     overlayParallax,
+    defaultSection,
   },
+  methods: {
+    // sendEmail(e) {
+    //   try {
+    //     emailjs.sendForm(
+    //       "service_spbem2j",
+    //       "template_dk2w896",
+    //       e.target,
+    //       "user_pKj9DgOGVwIBSkyrtbwG7",
+    //     );
+    //   } catch (error) {
+    //     console.log({ error });
+    //   }
+    //   // Reset form field
+    //   this.name_model = "";
+    //   this.email_model = "";
+    //   this.text_model = "";
+    // },
+    sendEmail(e) {
+      emailjs
+        .sendForm(
+          "service_spbem2j",
+          "template_dk2w896",
+          e.target,
+          "user_pKj9DgOGVwIBSkyrtbwG7"
+        )
+        .then(
+          (result) => {
+            this.form_success_alert = true;
+            (this.name_model = ""),
+              (this.email_model = ""),
+              (this.text_model = ""),
+              this.$refs.form.reset();
+
+            setTimeout(() => (this.form_success_alert = false), 5000);
+
+            console.log("SUCCESS!", result.text);
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    },
+  },
+  // mounted: function() {
+  //   this.$vuetify.goTo(0);
+  // },
 };
 </script>
