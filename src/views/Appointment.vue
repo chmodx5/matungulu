@@ -125,14 +125,13 @@
                   ></v-text-field>
                 </template>
                 <v-date-picker
-                  :max="
+                  :min="
                     new Date(
                       Date.now() - new Date().getTimezoneOffset() * 60000
                     )
                       .toISOString()
                       .substr(0, 10)
                   "
-                  min="1950-01-01"
                   v-model="datemodel"
                   no-title
                   scrollable
