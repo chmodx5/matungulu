@@ -10,7 +10,7 @@
           <p>public holidays : open</p>
         </div>
         <p class="font-weight-bold">
-          We are open 24 hours daily
+          We are open 24 hours 7 days a week
         </p>
       </v-col>
       <v-col md="6">

@@ -9,7 +9,7 @@
           height="50"
           width="50"
           :aspect-ratio="1 / 1"
-          :src="require(`@/assets/img/${img}`)"
+          :src="require(`@/assets/placeholder.png`)"
           style="border-radius: 50%;"
         ></v-img>
       </div>

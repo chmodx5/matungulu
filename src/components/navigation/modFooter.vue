@@ -43,11 +43,20 @@
             tala market street, matungulu sub-county, machakos county
           </p>
           <p>
-            0700 631 291 / 0738 669 259
+            For emergencies call: 0700 631 291
           </p>
           <p>
-            info@matungulumedical.co.ke / complaints@matungulumedical.co.ke
+            Reception: 0738 669 259
           </p>
+          <p>
+            Official No: 0723 715 180
+          </p>
+          <p>
+            General enquiries: info@matungulumedical.co.ke /
+            complaints@matungulumedical.co.ke
+          </p>
+          <p>Complaints: complaints@matungulumedical.co.ke /</p>
+          <p>Suggestions: info@matungulum</p>
         </v-col>
       </v-row>
     </v-container>

@@ -40,14 +40,14 @@ export default {
         testimonial:
           " I have had tonsils trouble for quite a while and since I visited MATUNGULU MEDICAL CENTRE, everything has changed. They have high quality doctors over there not to forget to mention how they run their operations with  professionalism!  I'd advise anyone having any sort of illness to try them out! Their service is just top notch!👌🏾",
         img: "hero/test1.jpeg",
-        name: "Susan",
+        name: "Cephas",
         title: "patient",
       },
       {
         testimonial:
           "My family and I have been using this facility for all our healthcare related issues and they have always served us well. The staff are friendly,the facility is clean and the service delivery is excellent. I would recommend MMHWC to anyone who is looking for premium healthcare.",
         img: "hero/test3.jpeg",
-        name: "Cephas",
+        name: "Susan",
         title: "patient",
       },
     ],

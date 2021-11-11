@@ -1,8 +1,48 @@
 <template>
   <div>
-    <hero></hero>
+    <hero>
+      <v-parallax
+        light
+        height="600"
+        src="https://source.unsplash.com/XZF2VZN98wY"
+      >
+        <v-overlay
+          absolute
+          opacity=".3"
+          color="secondary"
+          class="d-flex justify-center white--text"
+        >
+          <v-container class=" mx-auto" style="width:100vw">
+            <v-row justify="center" align="center">
+              <v-col cols="12" sm="8" md="4">
+                <v-card flat class="pa-6" color="transparent">
+                  <v-img class="mb-8" src="@/assets/img/insurance/nhif.png">
+                  </v-img>
+                  <v-btn
+                    @click="$vuetify.goTo('#insurance')"
+                    tile
+                    class="font-weight"
+                    color="secondary"
+                    >other insurance partners
+                  </v-btn>
+                </v-card>
+              </v-col>
+              <v-col cols="12" class="text-center text-md-left text-md" md="8">
+                <div>
+                  <h3 class="text-h2 text-capitalize font-weight-black">
+                    we are an NHIF-accredited medical facility.
+                  </h3>
+                </div>
+              </v-col>
+            </v-row>
+            <div class="d-flex "></div>
+          </v-container>
+        </v-overlay>
+      </v-parallax>
+    </hero>
+
     <services :services="services"></services>
-    <nhif></nhif>
+
     <about
       title="Who are we?"
       subtitle="We are an acclaimed level 3 medical facility geared towards providing quality, reliable and affordable healthcare"
@@ -28,11 +68,11 @@
         <v-form ref="form" v-model="valid" @submit.prevent="sendEmail">
           <v-container>
             <v-row>
-              <v-col cols="12" md="6">
+              <v-col cols="12" md="4">
                 <v-text-field
                   v-model="name_model"
                   :rules="full_name_rules"
-                  :counter="10"
+                  :counter="30"
                   label="Full Name"
                   required
                   outlined
@@ -40,11 +80,11 @@
                   name="from_name"
                 ></v-text-field>
               </v-col>
-              <v-col cols="12" md="6">
+              <v-col cols="12" md="4">
                 <v-text-field
                   v-model="email_model"
                   :rules="email_rules"
-                  :counter="10"
+                  :counter="30"
                   label="Email"
                   required
                   outlined
@@ -52,11 +92,24 @@
                   name="from_email"
                 ></v-text-field>
               </v-col>
+              <v-col cols="12" md="4">
+                <v-text-field
+                  v-model="number_model"
+                  :counter="10"
+                  label="Phone number (optional)"
+                  required
+                  outlined
+                  type="number"
+                  style="border-radius: 0;"
+                  name="from_name"
+                ></v-text-field>
+              </v-col>
               <v-col cols="12" md="12">
                 <v-textarea
                   v-model="text_model"
                   :rules="text_rules"
                   outlined
+                  :counter="200"
                   label="Your feedback"
                   auto-grow
                   style="border-radius: 0;"
@@ -96,7 +149,7 @@ import testimonials from "@/components/sections/testimonials.vue";
 import about from "@/components/sections/about.vue";
 import overlayParallax from "@/components/sections/overlayParallax.vue";
 import insurance from "@/components/sections/insurance.vue";
-import nhif from "@/components/sections/nhif.vue";
+
 import defaultSection from "@/components/layouts/defaultSection.vue";
 
 export default {
@@ -107,10 +160,13 @@ export default {
     form_error_alert: false,
     name_model: null,
     email_model: null,
+    number_model: null,
     text_model: null,
     full_name_rules: [
-      (v) => !!v || "full name is required",
-      (v) => (v && v.length >= 10) || "Name must be more than 10 characters",
+      (v) => !!v || "Full name is required",
+      (v) =>
+        (v && v.length <= 30) ||
+        "Name must be more than 5 characters and less than 30",
     ],
     email_rules: [
       (v) => !!v || "E-mail is required",
@@ -118,7 +174,9 @@ export default {
     ],
     text_rules: [
       (v) => !!v || "text is name is required",
-      (v) => (v && v.length >= 50) || "Name must be more than 50 characters",
+      (v) =>
+        (v && v.length >= 5 && v.length <= 200) ||
+        "Name must be less than 200 characters and more than 5",
     ],
     services: [
       {
@@ -246,7 +304,7 @@ export default {
   components: {
     hero,
     services,
-    nhif,
+
     testimonials,
     about,
     insurance,
@@ -254,6 +312,10 @@ export default {
     defaultSection,
   },
   methods: {
+    go_to_insurance() {
+      alert("hello otto");
+      this.$vuetify.goTo("insurance");
+    },
     // sendEmail(e) {
     //   try {
     //     emailjs.sendForm(

@@ -10,7 +10,7 @@
       :icon="service.icon"
       :id="service.id"
       :list="service.list"
-      class="d-flex"
+      class="d-flex text-justify"
     >
       <p>
         {{ service.desc }}
@@ -37,7 +37,7 @@ export default {
         icon: "mdi-hospital-building",
         title: "out-patient",
         desc:
-          "Matungulu Medical Health and Wellness Centre is committed to quality healthcare provision ranging from routine health examination to managing chronic conditions. Ourteam of qualified and highly experienced healthcare personnel are committed to promotegood health through health screening, wellness and prevention, diagnosis, treatment and health education.Our outpatient services include: ",
+          "Matungulu Medical Health and Wellness Centre is committed to quality healthcare provision ranging from routine health examination to managing chronic conditions. Our team of qualified and highly experienced healthcare personnel are committed to promote good health through health screening, wellness and prevention, diagnosis, treatment and health education.Our outpatient services include: ",
         list: [
           "General Consultation",
           " Laboratory",
@@ -89,7 +89,7 @@ export default {
         icon: "mdi-face-recognition",
         title: "Imaging Services",
         desc:
-          "Our ultrasound imaging will enable you see the progress of your unborn child, memories that will forever remain unforgettable.",
+          "Matungulu medical offers a wide range of ultrasound tests to aid in the best clinical management and recommended best course of treatment",
       },
     ],
   }),

@@ -213,7 +213,6 @@ export default {
     ],
     services: ["optical", "dental", "ultrasound"],
     time: [
-      "8 - 9am",
       "9 - 10am",
       "10 - 11am",
       "11-12pm",

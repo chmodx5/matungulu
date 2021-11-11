@@ -17,7 +17,7 @@
             height="100%"
             class="d-flex align-center"
           >
-            <v-overlay absolute color="secondary">
+            <v-overlay absolute opacity="0.1" color="secondary">
               <v-container style="width:100vw">
                 <v-row style="">
                   <v-col md="8">
@@ -46,6 +46,9 @@
               </v-container>
             </v-overlay>
           </v-img>
+        </v-carousel-item>
+        <v-carousel-item class="">
+          <slot />
         </v-carousel-item>
       </v-carousel>
     </v-card>
@@ -127,6 +130,7 @@
 <script>
 import mHeading from "@/components/mHeading.vue";
 import heroCard from "@/components/heroCard.vue";
+
 export default {
   name: "hero",
   components: {
@@ -136,27 +140,12 @@ export default {
   data: () => ({
     heroslides: [
       {
-        title: "Passion for Caring",
+        title: "Caring with passion",
         subtitle:
           "We aim to make your life better, letting you and your family live the life you want",
         img: "hero/carousel1.jpeg",
         btntext: "book appointment",
         btnlink: "/appointment",
-      },
-      {
-        title: "COVID-19 is real!",
-        subtitle:
-          "Remember to always wear a mask, sanitize or wash your hands with soap regularly and keep social distance.",
-        img: "hero/corona1.jpeg",
-        btntext: "about us",
-        btnlink: "/about",
-      },
-      {
-        title: "We are NHIF accredited!",
-        subtitle: "",
-        img: "hero/corona1.jpeg",
-        btntext: "other insurance partners",
-        btnlink: "/about",
       },
     ],
   }),

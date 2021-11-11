@@ -10,7 +10,15 @@
         <v-row justify="center" align="center">
           <v-col cols="12" sm="8" md="4">
             <v-card flat class="pa-6" color="transparent">
-              <v-img src="@/assets/img/insurance/nhif.png"> </v-img>
+              <v-img class="mb-8" src="@/assets/img/insurance/nhif.png">
+              </v-img>
+              <v-btn
+                @click="go_to_insurance"
+                tile
+                class="font-weight"
+                color="secondary"
+                >other insurance partners
+              </v-btn>
             </v-card>
           </v-col>
           <v-col cols="12" class="text-center text-md-left text-md" md="8">
@@ -26,3 +34,21 @@
     </v-overlay>
   </v-parallax>
 </template>
+
+<script>
+export default {
+  computed: {
+    get_insurance() {
+      return this.$store.state.insurance;
+    },
+  },
+  methods: {
+    go_to_insurance() {
+      this.$router.push({ path: "#insurance" });
+    },
+  },
+  props: {
+    go_to_insurance: Function,
+  },
+};
+</script>
