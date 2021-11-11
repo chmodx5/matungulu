@@ -57,7 +57,7 @@ export default {
       },
       {
         id: "maternity",
-        img: "hero/maternity.jpeg",
+        img: "services/delivery-bed.jpg",
         left: false,
         icon: "mdi-mother-nurse",
         title: "maternity",
