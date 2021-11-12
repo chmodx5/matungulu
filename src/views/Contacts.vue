@@ -40,17 +40,23 @@
             <contact-card icon="mdi-email-outline" title="email">
               <p class="text-caption mb-0">
                 <span class="font-weight-bold">General Enquiries: </span>
-                info@matungulumedical.co.ke
+                <span class="text-lowercase">
+                  info@matungulumedical.co.ke
+                </span>
               </p>
               <p class="text-caption mb-0">
                 <span class="font-weight-bold"
                   >Complaints and Suggestions :
                 </span>
-                complaints@matungulumedical.co.ke
+                <span class="text-lowercase">
+                  complaints@matungulumedical.co.ke
+                </span>
               </p>
               <p class="text-caption">
                 <span class="font-weight-bold">Official Enquiries: </span>
-                complaints@matungulumedical.co.ke
+                <span class="text-lowercase">
+                  admin@matungulumedical.co.ke
+                </span>
               </p>
             </contact-card>
           </v-col>
