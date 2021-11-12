@@ -173,7 +173,7 @@ export default {
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
     text_rules: [
-      (v) => !!v || "text is name is required",
+      (v) => !!v || "text is required",
       (v) =>
         (v && v.length >= 5 && v.length <= 200) ||
         "Name must be less than 200 characters and more than 5",
