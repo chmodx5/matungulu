@@ -25,19 +25,31 @@
           <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-phone-outline" title="phone numbers">
               <p class="text-caption mb-0">
-                0700 631 291
+                <span class="font-weight-bold">
+                  Emergency/Reception:
+                </span>
+                0700 631 291 / 0738 669 259
               </p>
-              <p class="text-caption">
-                0738 669 259
+              <p class="text-caption mb-0">
+                <span class="font-weight-bold">Official Enquiries: </span>
+                0723715180
               </p>
             </contact-card>
           </v-col>
           <v-col cols="12" sm="6" class="d-flex">
             <contact-card icon="mdi-email-outline" title="email">
               <p class="text-caption mb-0">
+                <span class="font-weight-bold">General Enquiries: </span>
                 info@matungulumedical.co.ke
               </p>
+              <p class="text-caption mb-0">
+                <span class="font-weight-bold"
+                  >Complaints and Suggestions :
+                </span>
+                complaints@matungulumedical.co.ke
+              </p>
               <p class="text-caption">
+                <span class="font-weight-bold">Official Enquiries: </span>
                 complaints@matungulumedical.co.ke
               </p>
             </contact-card>
