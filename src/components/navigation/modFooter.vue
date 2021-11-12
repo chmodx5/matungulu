@@ -56,7 +56,7 @@
             complaints@matungulumedical.co.ke
           </p>
           <p>Complaints: complaints@matungulumedical.co.ke /</p>
-          <p>Suggestions: info@matungulum</p>
+          <p>Suggestions: info@matungulumedical.co.ke</p>
         </v-col>
       </v-row>
     </v-container>
