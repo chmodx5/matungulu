@@ -1,6 +1,5 @@
 <template>
   <default-section title="the services we provide">
-    <h1>{{ $route.params.id }}</h1>
     <service-section
       v-for="(service, i) in services"
       :key="i"

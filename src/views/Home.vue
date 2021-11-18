@@ -80,7 +80,19 @@
                   name="from_name"
                 ></v-text-field>
               </v-col>
-              <v-col cols="12" md="4">
+
+              <v-col>
+                <v-select
+                  :items="['Phone', 'Email']"
+                  v-model="select_contact_method"
+                  filled
+                  label="select contact method. Phone/Email"
+                  outlined
+                  style="border-radius: 0;"
+                ></v-select>
+              </v-col>
+
+              <v-col cols="12" md="4" v-if="select_contact_method == 'Email'">
                 <v-text-field
                   v-model="email_model"
                   :rules="email_rules"
@@ -92,7 +104,7 @@
                   name="from_email"
                 ></v-text-field>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="4" v-if="select_contact_method == 'Phone'">
                 <v-text-field
                   v-model="number_model"
                   :counter="10"
@@ -101,7 +113,7 @@
                   outlined
                   type="number"
                   style="border-radius: 0;"
-                  name="from_name"
+                  name="phone_number"
                 ></v-text-field>
               </v-col>
               <v-col cols="12" md="12">
@@ -155,6 +167,7 @@ import defaultSection from "@/components/layouts/defaultSection.vue";
 export default {
   name: "Home",
   data: () => ({
+    select_contact_method: "",
     valid: true,
     form_success_alert: false,
     form_error_alert: false,
@@ -301,6 +314,7 @@ export default {
       },
     ],
   }),
+
   components: {
     hero,
     services,
